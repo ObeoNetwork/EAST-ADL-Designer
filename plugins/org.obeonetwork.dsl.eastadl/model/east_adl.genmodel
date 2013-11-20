@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.obeonetwork.dsl.eastadl/src"
+    creationIcons="false" modelPluginID="org.obeonetwork.dsl.eastadl" modelName="East_adl"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false">
+  <foreignModel>east_adl.ecore</foreignModel>
+  <genPackages prefix="East_adl" basePackage="org.obeonetwork.dsl" disposableProviderFactory="true"
+      ecorePackage="east_adl.ecore#/">
+    <genClasses ecoreClass="east_adl.ecore#//EASTADLModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//EASTADLModel/artifacts"/>
+    </genClasses>
+    <nestedGenPackages prefix="Core" disposableProviderFactory="true" ecorePackage="east_adl.ecore#//core">
+      <genClasses image="false" ecoreClass="east_adl.ecore#//core/EASTADLNamedElement">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//core/EASTADLNamedElement/name"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="east_adl.ecore#//core/EASTADLArtifact">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//core/EASTADLArtifact/requirements"/>
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//core/EASTADLArtifact/model"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//core/EASTADLArtifact/supportEntities"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//core/EASTADLArtifact/validationEntities"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="east_adl.ecore#//core/EASTADLEntity">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//core/EASTADLEntity/passiveAssignments"/>
+        <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//core/EASTADLEntity/assignedRequirements"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Structure" disposableProviderFactory="true" ecorePackage="east_adl.ecore#//structure">
+      <genClasses image="false" ecoreClass="east_adl.ecore#//structure/StructureHolder"/>
+      <nestedGenPackages prefix="Vehicle_feature_model" disposableProviderFactory="true"
+          ecorePackage="east_adl.ecore#//structure/vehicle_feature_model">
+        <genClasses ecoreClass="east_adl.ecore#//structure/vehicle_feature_model/VehicleFeatureModel">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/vehicle_feature_model/VehicleFeatureModel/vehicleParameters"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/vehicle_feature_model/VehicleFeatureModel/vehicleSets"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/vehicle_feature_model/VehicleFeatureModel/analysisArchitecture"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/vehicle_feature_model/VehicleFeatureModel/designArchitecture"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/vehicle_feature_model/VehicleFeatureModel/electronicFeatures"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/vehicle_feature_model/VehicleParameter">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/vehicle_feature_model/VehicleParameter/customerChoice"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/vehicle_feature_model/VehicleParameter/type"/>
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/vehicle_feature_model/VehicleParameter/owningArtifact"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/vehicle_feature_model/VehicleSet">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/vehicle_feature_model/VehicleSet/inclusions"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/vehicle_feature_model/VehicleSet/vehicleInclusionCriterion"/>
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/vehicle_feature_model/VehicleSet/owningArtifact"/>
+          <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/vehicle_feature_model/VehicleSet/includedEFeatures"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/vehicle_feature_model/Inclusion">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/vehicle_feature_model/Inclusion/electronicFeature"/>
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/vehicle_feature_model/Inclusion/vehicleSet"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/vehicle_feature_model/EFeature">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/vehicle_feature_model/EFeature/optional"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/vehicle_feature_model/EFeature/visibleByCustomer"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/vehicle_feature_model/EFeature/passiveSpecifications"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/vehicle_feature_model/EFeature/passiveConstraints"/>
+          <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/vehicle_feature_model/EFeature/specifyingFunctionalRequirements"/>
+          <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/vehicle_feature_model/EFeature/constrainingDesignConstraints"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/vehicle_feature_model/EFeature/inclusions"/>
+          <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/vehicle_feature_model/EFeature/includingVehicleSets"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/vehicle_feature_model/EFeature/subFeatures"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/vehicle_feature_model/EFeature/description"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Functional_analysis_architecture" disposableProviderFactory="true"
+          ecorePackage="east_adl.ecore#//structure/functional_analysis_architecture">
+        <genClasses ecoreClass="east_adl.ecore#//structure/functional_analysis_architecture/FunctionalAnalysisArchitecture">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_analysis_architecture/FunctionalAnalysisArchitecture/analysisFunctions"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_analysis_architecture/FunctionalAnalysisArchitecture/functionalDevices"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_analysis_architecture/FunctionalAnalysisArchitecture/vehicleModel"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_analysis_architecture/FunctionalAnalysisArchitecture/designArchitecture"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_analysis_architecture/FunctionalAnalysisArchitecture/designDataTypes"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_analysis_architecture/FunctionalAnalysisArchitecture/connectorSignals"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_analysis_architecture/FunctionalAnalysisArchitecture/operationCalls"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_analysis_architecture/FunctionalAnalysisArchitecture/typeAssociations"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_analysis_architecture/FunctionalAnalysisArchitecture/implementationDataTypes"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/functional_analysis_architecture/AnalysisFunction">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_analysis_architecture/AnalysisFunction/parameters"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_analysis_architecture/AnalysisFunction/ports"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_analysis_architecture/AnalysisFunction/subFunctions"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_analysis_architecture/AnalysisFunction/analysisBehavior"/>
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_analysis_architecture/AnalysisFunction/functionalDevices"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/functional_analysis_architecture/FunctionalDevice">
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_analysis_architecture/FunctionalDevice/owningArtifact"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_analysis_architecture/FunctionalDevice/parameters"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_analysis_architecture/FunctionalDevice/ports"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_analysis_architecture/FunctionalDevice/owningFunction"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/functional_analysis_architecture/EnvironmentFunction">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_analysis_architecture/EnvironmentFunction/actuators"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_analysis_architecture/EnvironmentFunction/sensors"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Functional_design_architecture" disposableProviderFactory="true"
+          ecorePackage="east_adl.ecore#//structure/functional_design_architecture">
+        <genClasses ecoreClass="east_adl.ecore#//structure/functional_design_architecture/FunctionalDesignArchitecture">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_design_architecture/FunctionalDesignArchitecture/elementarySoftwareFunctions"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_design_architecture/FunctionalDesignArchitecture/compositeSoftwareFunctions"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_design_architecture/FunctionalDesignArchitecture/analysisArchitecture"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_design_architecture/FunctionalDesignArchitecture/vehicleModel"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_design_architecture/FunctionalDesignArchitecture/instanceModel"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_design_architecture/FunctionalDesignArchitecture/typeAssociations"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_design_architecture/FunctionalDesignArchitecture/implementationDataTypes"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_design_architecture/FunctionalDesignArchitecture/designDataTypes"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_design_architecture/FunctionalDesignArchitecture/connectorSignals"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_design_architecture/FunctionalDesignArchitecture/operationCalls"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_design_architecture/FunctionalDesignArchitecture/hardwareArchitecture"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/functional_design_architecture/ElementarySoftwareFunction">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_design_architecture/ElementarySoftwareFunction/ports"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_design_architecture/ElementarySoftwareFunction/parameters"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_design_architecture/ElementarySoftwareFunction/instances"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/functional_design_architecture/ElementarySoftwareFunction/triggerType"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/functional_design_architecture/ElementarySoftwareFunction/triggerEvent"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/functional_design_architecture/ElementarySoftwareFunction/triggerCondition"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_design_architecture/ElementarySoftwareFunction/period"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_design_architecture/ElementarySoftwareFunction/offset"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_design_architecture/ElementarySoftwareFunction/executionTime"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_design_architecture/ElementarySoftwareFunction/specifationBehavior"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_design_architecture/ElementarySoftwareFunction/implementationBehavior"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_design_architecture/ElementarySoftwareFunction/activePrecedencies"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_design_architecture/ElementarySoftwareFunction/passivePrecedencies"/>
+          <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_design_architecture/ElementarySoftwareFunction/predecessors"/>
+          <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_design_architecture/ElementarySoftwareFunction/successors"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/functional_design_architecture/CompositeSoftwareFunction">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_design_architecture/CompositeSoftwareFunction/elementarySoftwareFunctions"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_design_architecture/CompositeSoftwareFunction/compositeSoftwareFunctions"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_design_architecture/CompositeSoftwareFunction/ports"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_design_architecture/CompositeSoftwareFunction/parameters"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/functional_design_architecture/LocalDeviceManager"/>
+        <genClasses ecoreClass="east_adl.ecore#//structure/functional_design_architecture/Precedence">
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_design_architecture/Precedence/predecessor"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/functional_design_architecture/Precedence/successor"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Function_instance_model" disposableProviderFactory="true"
+          ecorePackage="east_adl.ecore#//structure/function_instance_model">
+        <genClasses ecoreClass="east_adl.ecore#//structure/function_instance_model/FunctionInstanceModel">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/function_instance_model/FunctionInstanceModel/designArchitecture"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/function_instance_model/FunctionInstanceModel/functionInstances"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/function_instance_model/FunctionInstanceModel/logicalClusters"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/function_instance_model/FunctionInstanceModel/signalInstances"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/function_instance_model/FunctionInstanceModel/allocationModel"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/function_instance_model/FunctionInstance">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/function_instance_model/FunctionInstance/triggerType"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/function_instance_model/FunctionInstance/triggerEvent"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/function_instance_model/FunctionInstance/period"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/function_instance_model/FunctionInstance/offset"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/function_instance_model/FunctionInstance/executionTime"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/function_instance_model/FunctionInstance/instantiatedFunction"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/function_instance_model/FunctionInstance/definedParameters"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/function_instance_model/FunctionInstance/referencedParameters"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/function_instance_model/LogicalCluster">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/function_instance_model/LogicalCluster/functionInstances"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/function_instance_model/LogicalCluster/passiveDeployments"/>
+          <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/function_instance_model/LogicalCluster/deployers"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/function_instance_model/LogicalCluster/period"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/function_instance_model/LogicalCluster/offset"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/function_instance_model/LogicalCluster/triggerType"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/function_instance_model/LogicalCluster/triggerEvent"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/function_instance_model/ParameterInstance">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/function_instance_model/ParameterInstance/instantiatedParameter"/>
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/function_instance_model/ParameterInstance/owningFunction"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/function_instance_model/ParameterInstance/referencingFunctions"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/function_instance_model/SignalInstance">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/function_instance_model/SignalInstance/size"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/function_instance_model/SignalInstance/destination"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/function_instance_model/SignalInstance/instantiatedSignal"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/function_instance_model/SignalInstance/passiveDeployments"/>
+          <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/function_instance_model/SignalInstance/deployers"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/function_instance_model/SignalInstance/outgoingExchangers"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/function_instance_model/SignalInstance/incomingExchangers"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/function_instance_model/SignalInstance/source"/>
+        </genClasses>
+        <genClasses image="false" ecoreClass="east_adl.ecore#//structure/function_instance_model/SignalInstanceTarget">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/function_instance_model/SignalInstanceTarget/incomingSignals"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/function_instance_model/SignalInstanceTarget/outgoingSignals"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Hardware_architecture" disposableProviderFactory="true"
+          ecorePackage="east_adl.ecore#//structure/hardware_architecture">
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="east_adl.ecore#//structure/hardware_architecture/MemoryKind">
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/hardware_architecture/MemoryKind/RAM"/>
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/hardware_architecture/MemoryKind/ROM"/>
+        </genEnums>
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="east_adl.ecore#//structure/hardware_architecture/ChannelKind">
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/hardware_architecture/ChannelKind/MOST"/>
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/hardware_architecture/ChannelKind/CAN"/>
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/hardware_architecture/ChannelKind/FlexRay"/>
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/hardware_architecture/ChannelKind/TTP"/>
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/hardware_architecture/ChannelKind/LIN"/>
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/hardware_architecture/ChannelKind/Electrical"/>
+        </genEnums>
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="east_adl.ecore#//structure/hardware_architecture/ICUMeasurementKind">
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/hardware_architecture/ICUMeasurementKind/SignalEdgeDetection"/>
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/hardware_architecture/ICUMeasurementKind/SignalMeasurement"/>
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/hardware_architecture/ICUMeasurementKind/Timestamp"/>
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/hardware_architecture/ICUMeasurementKind/EdgeCounter"/>
+        </genEnums>
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="east_adl.ecore#//structure/hardware_architecture/EdgeKind">
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/hardware_architecture/EdgeKind/Rising"/>
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/hardware_architecture/EdgeKind/Falling"/>
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/hardware_architecture/EdgeKind/Both"/>
+        </genEnums>
+        <genClasses ecoreClass="east_adl.ecore#//structure/hardware_architecture/HardwareArchitecture">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/HardwareArchitecture/platformModel"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/HardwareArchitecture/hardwareEntities"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/HardwareArchitecture/electricalSignals"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/HardwareArchitecture/wires"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/HardwareArchitecture/designArchitecture"/>
+        </genClasses>
+        <genClasses image="false" ecoreClass="east_adl.ecore#//structure/hardware_architecture/HardwareEntity">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/hardware_architecture/HardwareEntity/description"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/hardware_architecture/HardwareEntity/technicalSpecification"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/hardware_architecture/ECU">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/ECU/processors"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/ECU/memory"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/ECU/channels"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/ECU/peripherals"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/ECU/pins"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/ECU/allocations"/>
+          <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/ECU/allocatedEntities"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/hardware_architecture/Processor">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/hardware_architecture/Processor/type"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/hardware_architecture/Processor/frequency"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/hardware_architecture/Processor/frequencyUnit"/>
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Processor/owningECU"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Processor/usedMemory"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Processor/tasks"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Processor/IODrivers"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Processor/deviceDrivers"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Processor/frameworks"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Processor/operatingSystems"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Processor/typeAssociations"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Processor/hardwareAbstractions"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Processor/peripherals"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/hardware_architecture/Memory">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/hardware_architecture/Memory/memoryType"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/hardware_architecture/Memory/size"/>
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Memory/owningECU"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Memory/usingProcessors"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/hardware_architecture/Peripheral">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/hardware_architecture/Peripheral/type"/>
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Peripheral/owningECU"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Peripheral/pins"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Peripheral/deviceDrivers"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Peripheral/IODrivers"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Peripheral/processors"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/hardware_architecture/ElectricalSignal">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/hardware_architecture/ElectricalSignal/minimumVoltage"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/hardware_architecture/ElectricalSignal/maximumVoltage"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/ElectricalSignal/typedPins"/>
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/ElectricalSignal/owningArtifact"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/hardware_architecture/DigitalSignal">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/hardware_architecture/DigitalSignal/minimumMaximumVoltage"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/hardware_architecture/DigitalSignal/maximumMinimumVoltage"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/hardware_architecture/AnalogSignal"/>
+        <genClasses ecoreClass="east_adl.ecore#//structure/hardware_architecture/PWMSignal">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/hardware_architecture/PWMSignal/minimumFrequency"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/hardware_architecture/PWMSignal/maximumFrequency"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/hardware_architecture/PWMSignal/minimumWidth"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/hardware_architecture/PWMSignal/maximumWidth"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/hardware_architecture/Channel">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/hardware_architecture/Channel/protocol"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/hardware_architecture/Channel/channelType"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Channel/connectedSensors"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Channel/connectedActuators"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Channel/connectedECUs"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Channel/frames"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/hardware_architecture/Wire">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Wire/source"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Wire/destination"/>
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Wire/owningArtifact"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/hardware_architecture/Pin">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Pin/outgoingWires"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Pin/incomingWires"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/hardware_architecture/Pin/physicalMeaning"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/hardware_architecture/Pin/directionType"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Pin/type"/>
+          <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Pin/owningHardware"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Pin/abstractInterfaces"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/hardware_architecture/Sensor">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/hardware_architecture/Sensor/quantity"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Sensor/channels"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Sensor/sensorModel"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Sensor/pins"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/hardware_architecture/Actuator">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/hardware_architecture/Actuator/quantity"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Actuator/channels"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Actuator/actuatorModel"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/hardware_architecture/Actuator/pins"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/hardware_architecture/ICUSignal">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/hardware_architecture/ICUSignal/measurementMode"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/hardware_architecture/ICUSignal/defaultStartEdge"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/hardware_architecture/ICUSignal/additionalData"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Platform_model" disposableProviderFactory="true"
+          ecorePackage="east_adl.ecore#//structure/platform_model">
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="east_adl.ecore#//structure/platform_model/ExecutionModelKind">
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/platform_model/ExecutionModelKind/FixedPriority"/>
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/platform_model/ExecutionModelKind/StaticCyclic"/>
+        </genEnums>
+        <genClasses ecoreClass="east_adl.ecore#//structure/platform_model/PlatformModel">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/PlatformModel/allocationModel"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/PlatformModel/hardwareArchitecture"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/PlatformModel/deviceDrivers"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/PlatformModel/IODrivers"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/PlatformModel/abstractFunctions"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/PlatformModel/frameworks"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/PlatformModel/operatingSystems"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/PlatformModel/compositeSoftwareFunctions"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/PlatformModel/elementarySoftwareFunctions"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/PlatformModel/IPCExchangers"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/PlatformModel/designDataTypes"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/PlatformModel/implementationDataTypes"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/PlatformModel/typeAssociations"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/PlatformModel/connectorSignals"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/PlatformModel/operationCalls"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/platform_model/DeviceDriver">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/platform_model/DeviceDriver/configurationData"/>
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/DeviceDriver/owningArtifact"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/DeviceDriver/processor"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/DeviceDriver/peripheral"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/platform_model/IODriver">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/platform_model/IODriver/configurationData"/>
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/IODriver/owningArtifact"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/IODriver/abstraction"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/IODriver/processor"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/IODriver/peripheral"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/platform_model/HardwareAbstractionFunction">
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/HardwareAbstractionFunction/owningArtifact"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/HardwareAbstractionFunction/driver"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/HardwareAbstractionFunction/providedPort"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/HardwareAbstractionFunction/requiredPort"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/HardwareAbstractionFunction/accessiblePins"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/HardwareAbstractionFunction/processor"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/platform_model/OperatingSystem">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/platform_model/OperatingSystem/type"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/platform_model/OperatingSystem/executionModelType"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/OperatingSystem/blockingFactor"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/OperatingSystem/taskSwitchTime"/>
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/OperatingSystem/owningArtifact"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/OperatingSystem/processor"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/platform_model/Framework">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/platform_model/Framework/configurationData"/>
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/Framework/owningArtifact"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/Framework/processor"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/platform_model/MWCompositeSoftwareFunction"/>
+        <genClasses ecoreClass="east_adl.ecore#//structure/platform_model/MWElementarySoftwareFunction"/>
+        <genClasses ecoreClass="east_adl.ecore#//structure/platform_model/SystemPort"/>
+        <genClasses ecoreClass="east_adl.ecore#//structure/platform_model/MWLocalPort"/>
+        <genClasses ecoreClass="east_adl.ecore#//structure/platform_model/MWRemotePort"/>
+        <genClasses ecoreClass="east_adl.ecore#//structure/platform_model/IPCExchanger">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/IPCExchanger/source"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/IPCExchanger/destination"/>
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/platform_model/IPCExchanger/owningArtifact"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Allocation_model" disposableProviderFactory="true"
+          ecorePackage="east_adl.ecore#//structure/allocation_model">
+        <genClasses ecoreClass="east_adl.ecore#//structure/allocation_model/AllocationModel">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/allocation_model/AllocationModel/frames"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/allocation_model/AllocationModel/tasks"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/allocation_model/AllocationModel/communicationBuffers"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/allocation_model/AllocationModel/platformModel"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/allocation_model/AllocationModel/instanceModel"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/allocation_model/Frame">
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/allocation_model/Frame/owningArtifact"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/allocation_model/Frame/period"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/allocation_model/Frame/offset"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/allocation_model/Frame/size"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/allocation_model/Frame/dataSize"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/allocation_model/Frame/priority"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/allocation_model/Frame/deployments"/>
+          <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/allocation_model/Frame/deployedSignalInstances"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/allocation_model/Frame/sendingChannel"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/allocation_model/OSTask">
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/allocation_model/OSTask/owningArtifact"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/allocation_model/OSTask/triggerType"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/allocation_model/OSTask/triggerEvent"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/allocation_model/OSTask/priority"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/allocation_model/OSTask/preemptable"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/allocation_model/OSTask/period"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/allocation_model/OSTask/offset"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/allocation_model/OSTask/executionTime"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/allocation_model/OSTask/deployments"/>
+          <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/allocation_model/OSTask/deployedClusters"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/allocation_model/OSTask/executingProcessor"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/allocation_model/CommunicationBuffer">
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/allocation_model/CommunicationBuffer/owningArtifact"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/allocation_model/CommunicationBuffer/size"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/allocation_model/CommunicationBuffer/deployments"/>
+          <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/allocation_model/CommunicationBuffer/deployedSignalInstances"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/allocation_model/SignalDeployment">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/allocation_model/SignalDeployment/deployed"/>
+          <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/allocation_model/SignalDeployment/deployer"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/allocation_model/SignalDeployment/position"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/allocation_model/SignalDeployment/offset"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/allocation_model/FunctionDeployment">
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/allocation_model/FunctionDeployment/deployer"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/allocation_model/FunctionDeployment/deployed"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Common" disposableProviderFactory="true" ecorePackage="east_adl.ecore#//structure/common">
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="east_adl.ecore#//structure/common/TriggerKind">
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/common/TriggerKind/Event"/>
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/common/TriggerKind/Periodic"/>
+        </genEnums>
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="east_adl.ecore#//structure/common/DesignDataTypeKind">
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/common/DesignDataTypeKind/Integer"/>
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/common/DesignDataTypeKind/Real"/>
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/common/DesignDataTypeKind/Boolean"/>
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/common/DesignDataTypeKind/String"/>
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/common/DesignDataTypeKind/Enumeration"/>
+        </genEnums>
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="east_adl.ecore#//structure/common/ImplementationDataTypeKind">
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/common/ImplementationDataTypeKind/UNUM8"/>
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/common/ImplementationDataTypeKind/UNUM16"/>
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/common/ImplementationDataTypeKind/UNUM32"/>
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/common/ImplementationDataTypeKind/UNUM64"/>
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/common/ImplementationDataTypeKind/SNUM8"/>
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/common/ImplementationDataTypeKind/SNUM16"/>
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/common/ImplementationDataTypeKind/SNUM32"/>
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/common/ImplementationDataTypeKind/SNUM64"/>
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/common/ImplementationDataTypeKind/FLOAT32"/>
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/common/ImplementationDataTypeKind/FLOAT64"/>
+        </genEnums>
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="east_adl.ecore#//structure/common/DirectionKind">
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/common/DirectionKind/In"/>
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/common/DirectionKind/Out"/>
+          <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//structure/common/DirectionKind/InOut"/>
+        </genEnums>
+        <genClasses image="false" ecoreClass="east_adl.ecore#//structure/common/FunctionPort">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/common/FunctionPort/provided"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/FunctionPort/interface"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/FunctionPort/fromDelay"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/FunctionPort/untilDelay"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/FunctionPort/periodRestriction"/>
+          <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/FunctionPort/owner"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/FunctionPort/period"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/FunctionPort/transferTime"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/common/SignalFunctionPort"/>
+        <genClasses ecoreClass="east_adl.ecore#//structure/common/OperationFunctionPort"/>
+        <genClasses image="false" ecoreClass="east_adl.ecore#//structure/common/FunctionPortInterface">
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/FunctionPortInterface/typedPort"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/common/SignalFunctionPortInterface">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/SignalFunctionPortInterface/emitedSignals"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/SignalFunctionPortInterface/receivedSignals"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/common/OperationFunctionPortInterface">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/OperationFunctionPortInterface/receivedCalls"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/OperationFunctionPortInterface/emitedCalls"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/OperationFunctionPortInterface/services"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/common/ConnectorSignal">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/ConnectorSignal/emitter"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/ConnectorSignal/receiver"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/ConnectorSignal/dataType"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/ConnectorSignal/period"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/ConnectorSignal/instances"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/common/DesignDataType">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/common/DesignDataType/description"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/common/DesignDataType/dataType"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/DesignDataType/typedSignals"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/common/DesignDataType/unit"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/common/DesignDataType/resolution"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/common/DesignDataType/physicalMinimum"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/common/DesignDataType/physicalMaximum"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/common/DesignDataType/significantDigits"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/common/DesignDataType/defaultValue"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/DesignDataType/typedServiceParameters"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/DesignDataType/typeAssociations"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/DesignDataType/typedFunctionParameters"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/common/ImplementationDataType">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/common/ImplementationDataType/description"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/common/ImplementationDataType/dataType"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/common/ImplementationDataType/implementationMinimum"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/common/ImplementationDataType/implementationMaximum"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/common/ImplementationDataType/defaultValue"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/ImplementationDataType/typeAssociations"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/common/Parameter">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/common/Parameter/constant"/>
+          <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/Parameter/owner"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/Parameter/instances"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/Parameter/dataType"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/common/Parameter/direction"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/common/Realization">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/Realization/realizedEntity"/>
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/Realization/realizingEntity"/>
+        </genClasses>
+        <genClasses image="false" ecoreClass="east_adl.ecore#//structure/common/RealizedEntity">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/RealizedEntity/passiveRealizations"/>
+          <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/RealizedEntity/realizedBy"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/common/OperationService">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/OperationService/parameters"/>
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/OperationService/interface"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/common/ServiceParameter">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/common/ServiceParameter/modifier"/>
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/ServiceParameter/owningService"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/ServiceParameter/dataType"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/common/OperationCall">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/OperationCall/receiver"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/OperationCall/emitter"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/common/TypeAssociation">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/common/TypeAssociation/scaleFactor"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//structure/common/TypeAssociation/scaleOffset"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/TypeAssociation/designDataType"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/TypeAssociation/implementationDataType"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/TypeAssociation/processor"/>
+        </genClasses>
+        <genClasses image="false" ecoreClass="east_adl.ecore#//structure/common/AllocatableEntity">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/AllocatableEntity/allocation"/>
+          <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/AllocatableEntity/allocationTarget"/>
+        </genClasses>
+        <genClasses ecoreClass="east_adl.ecore#//structure/common/AllocationConstraint">
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/AllocationConstraint/allocator"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/AllocationConstraint/target"/>
+        </genClasses>
+        <genClasses image="false" ecoreClass="east_adl.ecore#//structure/common/RealizingEntity">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/RealizingEntity/activeRealizations"/>
+          <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//structure/common/RealizingEntity/realizes"/>
+        </genClasses>
+      </nestedGenPackages>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Requirements" disposableProviderFactory="true" ecorePackage="east_adl.ecore#//requirements">
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="east_adl.ecore#//requirements/DesignConstraintKind">
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//requirements/DesignConstraintKind/Cost"/>
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//requirements/DesignConstraintKind/Process"/>
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//requirements/DesignConstraintKind/Allocation"/>
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//requirements/DesignConstraintKind/Physical"/>
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//requirements/DesignConstraintKind/PowerConsumption"/>
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//requirements/DesignConstraintKind/Reuse"/>
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//requirements/DesignConstraintKind/Standard"/>
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//requirements/DesignConstraintKind/Legacy"/>
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//requirements/DesignConstraintKind/Resource"/>
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//requirements/DesignConstraintKind/ReferenceArchitecture"/>
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//requirements/DesignConstraintKind/Other"/>
+      </genEnums>
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="east_adl.ecore#//requirements/QualityRequirementKind">
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//requirements/QualityRequirementKind/Performance"/>
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//requirements/QualityRequirementKind/HMI"/>
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//requirements/QualityRequirementKind/Dependability"/>
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//requirements/QualityRequirementKind/Configurability"/>
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//requirements/QualityRequirementKind/Ergonomy"/>
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//requirements/QualityRequirementKind/Safety"/>
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//requirements/QualityRequirementKind/Security"/>
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//requirements/QualityRequirementKind/Other"/>
+      </genEnums>
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="east_adl.ecore#//requirements/VerificationMethodKind">
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//requirements/VerificationMethodKind/Analysis"/>
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//requirements/VerificationMethodKind/Review"/>
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//requirements/VerificationMethodKind/DynamicTest"/>
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//requirements/VerificationMethodKind/Simulation"/>
+      </genEnums>
+      <genClasses image="false" ecoreClass="east_adl.ecore#//requirements/Requirement">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//requirements/Requirement/identifier"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//requirements/Requirement/externalDescriptions"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//requirements/Requirement/status"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//requirements/Requirement/maturity"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//requirements/Requirement/acceptanceCriterion"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//requirements/Requirement/criticality"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//requirements/Requirement/description"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//requirements/Requirement/activeTraces"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//requirements/Requirement/passiveTraces"/>
+        <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//requirements/Requirement/derivedRequirements"/>
+        <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//requirements/Requirement/sourceRequirements"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//requirements/Requirement/subRequirements"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//requirements/Requirement/verificationMethods"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//requirements/Requirement/activeAssignments"/>
+        <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//requirements/Requirement/assignedEntities"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//requirements/RequirementDescription">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//requirements/RequirementDescription/url"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//requirements/RequirementDescription/formalism"/>
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//requirements/RequirementDescription/requirement"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//requirements/FunctionalRequirement">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//requirements/FunctionalRequirement/specifications"/>
+        <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//requirements/FunctionalRequirement/specifiedEFeatures"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//requirements/DesignConstraint">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//requirements/DesignConstraint/designConstraintType"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//requirements/DesignConstraint/constraints"/>
+        <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//requirements/DesignConstraint/constrainedEFeatures"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//requirements/Constraint">
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//requirements/Constraint/constraint"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//requirements/Constraint/constrainedEntity"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//requirements/Specification">
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//requirements/Specification/functionalRequirement"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//requirements/Specification/specifiedEntity"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//requirements/QualityRequirement">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//requirements/QualityRequirement/qualityRequirementType"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//requirements/EndToEndDelay">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//requirements/EndToEndDelay/from"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//requirements/EndToEndDelay/until"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//requirements/EndToEndDelay/probability"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//requirements/TimingRestriction">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//requirements/TimingRestriction/upper"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//requirements/TimingRestriction/lower"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//requirements/TimingRestriction/nominal"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//requirements/TimingRestriction/jitter"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//requirements/PeriodRestriction">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//requirements/PeriodRestriction/assignedPorts"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//requirements/Bound">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//requirements/Bound/unit"/>
+        <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//requirements/Bound/timingRestriction"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//requirements/Bound/value"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//requirements/Trace">
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//requirements/Trace/tracer"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//requirements/Trace/traced"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//requirements/VerificationMethod">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//requirements/VerificationMethod/description"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//requirements/VerificationMethod/type"/>
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//requirements/VerificationMethod/requirement"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//requirements/Assignment">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//requirements/Assignment/target"/>
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//requirements/Assignment/assigner"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Variant_handling" disposableProviderFactory="true"
+        ecorePackage="east_adl.ecore#//variant_handling">
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="east_adl.ecore#//variant_handling/LogicalOperationKind">
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//variant_handling/LogicalOperationKind/And"/>
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//variant_handling/LogicalOperationKind/Or"/>
+      </genEnums>
+      <genClasses image="false" ecoreClass="east_adl.ecore#//variant_handling/VariantEntity">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//variant_handling/VariantEntity/nullVariant"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//variant_handling/VariantEntity/complete"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//variant_handling/VariantEntity/activeVariations"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//variant_handling/VariantEntity/activeSelections"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//variant_handling/VariantEntity/activeExclusions"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//variant_handling/VariantEntity/passiveVariation"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//variant_handling/VariantEntity/passiveSelections"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//variant_handling/VariantEntity/passiveExclusions"/>
+        <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//variant_handling/VariantEntity/variationPoint"/>
+        <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//variant_handling/VariantEntity/variants"/>
+        <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//variant_handling/VariantEntity/selectors"/>
+        <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//variant_handling/VariantEntity/selected"/>
+        <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//variant_handling/VariantEntity/excluders"/>
+        <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//variant_handling/VariantEntity/excluded"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//variant_handling/VariantEntity/selectionCriterion"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//variant_handling/Variation">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//variant_handling/Variation/variant"/>
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//variant_handling/Variation/variationPoint"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//variant_handling/Selection">
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//variant_handling/Selection/selector"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//variant_handling/Selection/selected"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//variant_handling/Selection/selectionType"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//variant_handling/Exclusion">
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//variant_handling/Exclusion/excluder"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//variant_handling/Exclusion/excluded"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Support" disposableProviderFactory="true" ecorePackage="east_adl.ecore#//support">
+      <genClasses image="false" ecoreClass="east_adl.ecore#//support/ArchivedEntity">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//support/ArchivedEntity/archiveDescription"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//support/ArchivedEntity/versionArchive"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//support/Version">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//support/Version/versionNumber"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//support/Version/author"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//support/Version/configuration"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//support/Version/versionArchive"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//support/Version/creation"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//support/Configuration">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//support/Configuration/versions"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//support/Configuration/configurationDescription"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//support/VersionArchive">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//support/VersionArchive/author"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//support/VersionArchive/creation"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//support/VersionArchive/archivedEntity"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//support/VersionArchive/versions"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="east_adl.ecore#//support/SupportEntity">
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//support/SupportEntity/owningArtifact"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Behavior" disposableProviderFactory="true" ecorePackage="east_adl.ecore#//behavior">
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="east_adl.ecore#//behavior/ExternalBehaviorKind">
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//behavior/ExternalBehaviorKind/Simulink"/>
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//behavior/ExternalBehaviorKind/ASCET"/>
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//behavior/ExternalBehaviorKind/SDL"/>
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//behavior/ExternalBehaviorKind/Statemate"/>
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//behavior/ExternalBehaviorKind/Other"/>
+      </genEnums>
+      <genClasses image="false" ecoreClass="east_adl.ecore#//behavior/Behavior">
+        <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//behavior/Behavior/owner"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//behavior/ExternalBehavior">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//behavior/ExternalBehavior/representation"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//behavior/ExternalBehavior/path"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//behavior/NativeBehavior">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//behavior/NativeBehavior/initialState"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//behavior/NativeBehavior/states"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//behavior/NativeBehavior/finalState"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//behavior/NativeBehavior/transitions"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//behavior/State">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//behavior/State/actions"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//behavior/State/outgoingTransitions"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//behavior/State/incomingTransitions"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//behavior/Transition">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//behavior/Transition/trigger"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//behavior/Transition/guard"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//behavior/Transition/effect"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//behavior/Transition/source"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//behavior/Transition/destination"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//behavior/ComplexState"/>
+      <genClasses ecoreClass="east_adl.ecore#//behavior/InitialState"/>
+      <genClasses ecoreClass="east_adl.ecore#//behavior/FinalState"/>
+      <genClasses ecoreClass="east_adl.ecore#//behavior/Action">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//behavior/Action/transition"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//behavior/Action/directive"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//behavior/ChoiceState"/>
+      <genClasses ecoreClass="east_adl.ecore#//behavior/JunctionState"/>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Verification_validation" disposableProviderFactory="true"
+        ecorePackage="east_adl.ecore#//verification_validation">
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="east_adl.ecore#//verification_validation/VerdictKind">
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//verification_validation/VerdictKind/Pass"/>
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//verification_validation/VerdictKind/Fail"/>
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//verification_validation/VerdictKind/Inconclusive"/>
+        <genEnumLiterals ecoreEnumLiteral="east_adl.ecore#//verification_validation/VerdictKind/Error"/>
+      </genEnums>
+      <genClasses image="false" ecoreClass="east_adl.ecore#//verification_validation/VVCase">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//verification_validation/VVCase/method"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//verification_validation/VVCase/purpose"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//verification_validation/VVCase/verdict"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//verification_validation/VVCase/objective"/>
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference east_adl.ecore#//verification_validation/VVCase/owningArtifact"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//verification_validation/VVCase/validatedEntities"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//verification_validation/Simulation">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//verification_validation/Simulation/stimulis"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//verification_validation/Simulation/abstractionLevel"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//verification_validation/Simulation/results"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//verification_validation/Simulation/outputs"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//verification_validation/StaticAnalysis"/>
+      <genClasses ecoreClass="east_adl.ecore#//verification_validation/FormalAnalysis">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//verification_validation/FormalAnalysis/properties"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//verification_validation/TestSuite">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//verification_validation/TestSuite/testCases"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//verification_validation/Stimuli">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//verification_validation/Stimuli/actualResult"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//verification_validation/Stimuli/output"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//verification_validation/Stimuli/data"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//verification_validation/TestCase">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//verification_validation/TestCase/abstractionLevel"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//verification_validation/TestCase/inputs"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//verification_validation/TestCase/results"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference east_adl.ecore#//verification_validation/TestCase/outputs"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//verification_validation/Input">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//verification_validation/Input/actualResult"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//verification_validation/Input/output"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//verification_validation/Input/scenario"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//verification_validation/ActualResult">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//verification_validation/ActualResult/data"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//verification_validation/ExpectedOutput">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//verification_validation/ExpectedOutput/data"/>
+      </genClasses>
+      <genClasses ecoreClass="east_adl.ecore#//verification_validation/Property">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//verification_validation/Property/formalism"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute east_adl.ecore#//verification_validation/Property/description"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="east_adl.ecore#//verification_validation/ValidatedEntity">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference east_adl.ecore#//verification_validation/ValidatedEntity/validators"/>
+      </genClasses>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

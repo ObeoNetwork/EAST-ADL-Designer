@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.topcased.org/0.11.0/east_adl"
+            class="org.obeonetwork.dsl.east_adl.East_adlPackage"
+            genModel="model/east_adl.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.topcased.org/0.11.0/east_adl/core"
+            class="org.obeonetwork.dsl.east_adl.core.CorePackage"
+            genModel="model/east_adl.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.topcased.org/0.11.0/east_adl/structure"
+            class="org.obeonetwork.dsl.east_adl.structure.StructurePackage"
+            genModel="model/east_adl.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.topcased.org/0.11.0/east_adl/structure/vehicle_feature_model"
+            class="org.obeonetwork.dsl.east_adl.structure.vehicle_feature_model.Vehicle_feature_modelPackage"
+            genModel="model/east_adl.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.topcased.org/0.11.0/east_adl/structure/functional_analysis_architecture"
+            class="org.obeonetwork.dsl.east_adl.structure.functional_analysis_architecture.Functional_analysis_architecturePackage"
+            genModel="model/east_adl.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.topcased.org/0.11.0/east_adl/structure/functional_design_architecture"
+            class="org.obeonetwork.dsl.east_adl.structure.functional_design_architecture.Functional_design_architecturePackage"
+            genModel="model/east_adl.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.topcased.org/0.11.0/east_adl/structure/function_instance_model"
+            class="org.obeonetwork.dsl.east_adl.structure.function_instance_model.Function_instance_modelPackage"
+            genModel="model/east_adl.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.topcased.org/0.11.0/east_adl/structure/hardware_architecture"
+            class="org.obeonetwork.dsl.east_adl.structure.hardware_architecture.Hardware_architecturePackage"
+            genModel="model/east_adl.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.topcased.org/0.11.0/east_adl/structure/platform_model"
+            class="org.obeonetwork.dsl.east_adl.structure.platform_model.Platform_modelPackage"
+            genModel="model/east_adl.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.topcased.org/0.11.0/east_adl/structure/allocation_model"
+            class="org.obeonetwork.dsl.east_adl.structure.allocation_model.Allocation_modelPackage"
+            genModel="model/east_adl.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.topcased.org/0.11.0/east_adl/structure/common"
+            class="org.obeonetwork.dsl.east_adl.structure.common.CommonPackage"
+            genModel="model/east_adl.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.topcased.org/0.11.0/east_adl/requirements"
+            class="org.obeonetwork.dsl.east_adl.requirements.RequirementsPackage"
+            genModel="model/east_adl.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.topcased.org/0.11.0/east_adl/variant_handling"
+            class="org.obeonetwork.dsl.east_adl.variant_handling.Variant_handlingPackage"
+            genModel="model/east_adl.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.topcased.org/0.11.0/east_adl/support"
+            class="org.obeonetwork.dsl.east_adl.support.SupportPackage"
+            genModel="model/east_adl.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.topcased.org/0.11.0/east_adl/behavior"
+            class="org.obeonetwork.dsl.east_adl.behavior.BehaviorPackage"
+            genModel="model/east_adl.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.topcased.org/0.11.0/east_adl/verification_validation"
+            class="org.obeonetwork.dsl.east_adl.verification_validation.Verification_validationPackage"
+            genModel="model/east_adl.genmodel"/>
+   </extension>
+
+</plugin>
