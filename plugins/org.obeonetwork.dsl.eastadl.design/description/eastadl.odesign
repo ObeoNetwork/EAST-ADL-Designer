@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="ASCII"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.obeo.fr/dsl/viewpoint/description/1.1.0" xmlns:filter="http://www.obeo.fr/dsl/viewpoint/description/filter/1.1.0" xmlns:style="http://www.obeo.fr/dsl/viewpoint/description/style/1.1.0" xmlns:tool="http://www.obeo.fr/dsl/viewpoint/description/tool/1.1.0" name="eastadl" version="6.7.0.201302071200">
+  <ownedViewpoints name="EAST-ADL" label="EAST-ADL" modelFileExtension="*.east_adl">
+    <ownedRepresentations xsi:type="description:DiagramDescription" name="EAST-ADL System" label="EAST-ADL System" initialisation="true" showOnStartup="true" domainClass="EASTADLModel">
+      <defaultLayer name="Artifacts" label="Artifacts" reusedTools="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Reusing']/@defaultLayer/@toolSections.0/@ownedTools[name='Name%20direct%20edit']">
+        <containerMappings name="Vehicle Feature Model" labelDirectEdit="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Reusing']/@defaultLayer/@toolSections.0/@ownedTools[name='Name%20direct%20edit']" semanticCandidatesExpression="&lt;%current.eAllContents%>" domainClass="VehicleFeatureModel" reusedContainerMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Reusing']/@defaultLayer/@containerMappings[name='GhostContainer']">
+          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="20" arcHeight="20" roundedCorner="true">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="Functional Analysis Architecture" detailDescriptions="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST-ADL%20System']/@defaultLayer/@toolSections.0/@subSections[name='Creation%20tools']/@ownedTools[name='Structure%20of%20Functional%20Analysis%20Architecture']" labelDirectEdit="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Reusing']/@defaultLayer/@toolSections.0/@ownedTools[name='Name%20direct%20edit']" semanticCandidatesExpression="&lt;%current.eAllContents%>" domainClass="FunctionalAnalysisArchitecture" reusedContainerMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Reusing']/@defaultLayer/@containerMappings[name='GhostContainer']">
+          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="20" arcHeight="20" roundedCorner="true">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="Functional Design Architecture" labelDirectEdit="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Reusing']/@defaultLayer/@toolSections.0/@ownedTools[name='Name%20direct%20edit']" semanticCandidatesExpression="&lt;%current.eAllContents%>" domainClass="FunctionalDesignArchitecture">
+          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="20" arcHeight="20" roundedCorner="true">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+          </style>
+        </containerMappings>
+        <toolSections name="Tools">
+          <subSections name="Creation tools">
+            <ownedTools xsi:type="tool:ContainerCreationDescription" name="Vehicle Feature Model" containerMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST-ADL%20System']/@defaultLayer/@containerMappings[name='Vehicle%20Feature%20Model']" iconPath="/org.obeonetwork.dsl.eastadl.design/icons/VehicleFeatureModel.gif">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="&lt;%$container%>">
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="VehicleFeatureModel" referenceName="artifacts">
+                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="VehicleFeatureModel_&lt;%$container.eContents.filter(&quot;VehicleFeatureModel&quot;).nSize()%>"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </ownedTools>
+            <ownedTools xsi:type="tool:ContainerCreationDescription" name="Functional Analysis Architecture" precondition="&lt;%$container.filter(&quot;FunctionalAnalysisArchitecture&quot;) == null%>" containerMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Reusing']/@defaultLayer/@containerMappings[name='GhostContainer']" iconPath="/org.obeonetwork.dsl.eastadl.design/icons/FunctionalAnalysisArchitecture.gif" extraMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST-ADL%20System']/@defaultLayer/@containerMappings[name='Vehicle%20Feature%20Model']">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="&lt;%$container%>">
+                  <subModelOperations xsi:type="tool:If" conditionExpression="&lt;%$container.filter(&quot;EASTADLModel&quot;) != null%>">
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="FunctionalAnalysisArchitecture" referenceName="artifacts">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="FunctionalAnalysisArchitecture_&lt;%$container.eContents.filter(&quot;FunctionalAnalysisArchitecture&quot;).nSize()%>"/>
+                    </subModelOperations>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool:If" conditionExpression="&lt;%$container.filter(&quot;VehicleFeatureModel&quot;) != null%>">
+                    <subModelOperations xsi:type="tool:ChangeContext" browseExpression="&lt;%$container.eContainer()%>">
+                      <subModelOperations xsi:type="tool:CreateInstance" typeName="FunctionalAnalysisArchitecture" referenceName="artifacts">
+                        <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="FunctionalAnalysisArchitecture_&lt;%$container.eContents.filter(&quot;FunctionalAnalysisArchitecture&quot;).nSize()%>"/>
+                        <subModelOperations xsi:type="tool:SetValue" featureName="vehicleModel" valueExpression="&lt;%$container%>"/>
+                      </subModelOperations>
+                    </subModelOperations>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </ownedTools>
+            <ownedTools xsi:type="tool:ContainerCreationDescription" name="Functional Design Architecture" containerMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Reusing']/@defaultLayer/@containerMappings[name='GhostContainer']" iconPath="/org.obeonetwork.dsl.eastadl.design/icons/FunctionalDesignArchitecture.gif" extraMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST-ADL%20System']/@defaultLayer/@containerMappings[name='Functional%20Analysis%20Architecture'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST-ADL%20System']/@defaultLayer/@containerMappings[name='Vehicle%20Feature%20Model']">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="&lt;%$container%>">
+                  <subModelOperations xsi:type="tool:If" conditionExpression="&lt;%$container.filter(&quot;EASTADLModel&quot;) != null%>">
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="FunctionalDesignArchitecture" referenceName="artifacts">
+                      <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="FunctionalDesignArchitecure_&lt;%$container.eContents.filter(&quot;FunctionalDesignArchitecture&quot;).nSize()%>"/>
+                    </subModelOperations>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool:If" conditionExpression="&lt;%$container.filter(&quot;VehicleFeatureModel&quot;) != null%>">
+                    <subModelOperations xsi:type="tool:ChangeContext" browseExpression="&lt;%$container.eContainer()%>">
+                      <subModelOperations xsi:type="tool:CreateInstance" typeName="FunctionalDesignArchitecture" referenceName="artifacts">
+                        <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="FunctionalDesignArchitecure_&lt;%$container.eContents.filter(&quot;FunctionalDesignArchitecture&quot;).nSize()%>"/>
+                        <subModelOperations xsi:type="tool:SetValue" featureName="vehicleModel" valueExpression="&lt;%$container%>"/>
+                      </subModelOperations>
+                    </subModelOperations>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool:If" conditionExpression="&lt;%$container.filter(&quot;FunctionalAnalysisArchitecture&quot;) != null%>">
+                    <subModelOperations xsi:type="tool:ChangeContext" browseExpression="&lt;%$container.eContainer()%>">
+                      <subModelOperations xsi:type="tool:CreateInstance" typeName="FunctionalDesignArchitecture" referenceName="artifacts">
+                        <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="FunctionalDesignArchitecure_&lt;%$container.eContents.filter(&quot;FunctionalDesignArchitecture&quot;).nSize()%>"/>
+                        <subModelOperations xsi:type="tool:SetValue" featureName="analysisArchitecture" valueExpression="&lt;%$container%>"/>
+                      </subModelOperations>
+                    </subModelOperations>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </ownedTools>
+            <ownedTools xsi:type="tool:DiagramCreationDescription" name="Structure of Functional Analysis Architecture" browseExpression="Structure of &lt;%$container.name%>" diagramDescription="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']">
+              <initialOperation/>
+              <containerViewVariable name="containerView"/>
+              <representationNameVariable name="diagramName"/>
+            </ownedTools>
+          </subSections>
+        </toolSections>
+      </defaultLayer>
+      <optionalLayers name="Connections">
+        <edgeMappings name="VFM to FAA" semanticCandidatesExpression="&lt;%current.eAllContents%>" sourceMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST-ADL%20System']/@defaultLayer/@containerMappings[name='Vehicle%20Feature%20Model']" targetMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST-ADL%20System']/@defaultLayer/@containerMappings[name='Functional%20Analysis%20Architecture']" targetFinderExpression="&lt;%analysisArchitecture%>">
+          <style sizeComputationExpression="1">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="VFM to FDA" semanticCandidatesExpression="&lt;%current.eAllContents%>" sourceMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST-ADL%20System']/@defaultLayer/@containerMappings[name='Vehicle%20Feature%20Model']" targetMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST-ADL%20System']/@defaultLayer/@containerMappings[name='Functional%20Design%20Architecture']" targetFinderExpression="&lt;%designArchitecture%>">
+          <style sizeComputationExpression="1">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="FAA to FDA" semanticCandidatesExpression="&lt;%current.eAllContents%>" sourceMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST-ADL%20System']/@defaultLayer/@containerMappings[name='Functional%20Analysis%20Architecture']" targetMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST-ADL%20System']/@defaultLayer/@containerMappings[name='Functional%20Design%20Architecture']" targetFinderExpression="&lt;%designArchitecture%>">
+          <style sizeComputationExpression="1">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </edgeMappings>
+        <toolSections name="Tools">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Refinement" edgeMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST-ADL%20System']/@optionalLayers[name='Connections']/@edgeMappings[name='FAA%20to%20FDA'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST-ADL%20System']/@optionalLayers[name='Connections']/@edgeMappings[name='VFM%20to%20FAA'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST-ADL%20System']/@optionalLayers[name='Connections']/@edgeMappings[name='VFM%20to%20FDA']" iconPath="/org.obeonetwork.dsl.eastadl.design/icons/Realization.gif">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="&lt;%$source%>">
+                <subModelOperations xsi:type="tool:If" conditionExpression="&lt;%$source.filter(&quot;VehicleFeatureModel&quot;) != null%>">
+                  <subModelOperations xsi:type="tool:If" conditionExpression="&lt;%$target.filter(&quot;FunctionalAnalysisArchitecture&quot;) != null%>">
+                    <subModelOperations xsi:type="tool:SetValue" featureName="analysisArchitecture" valueExpression="&lt;%$target%>"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool:If" conditionExpression="&lt;%$target.filter(&quot;FunctionalDesignArchitecture&quot;) != null%>">
+                    <subModelOperations xsi:type="tool:SetValue" featureName="designArchitecture" valueExpression="&lt;%$target%>"/>
+                  </subModelOperations>
+                </subModelOperations>
+                <subModelOperations xsi:type="tool:If" conditionExpression="&lt;%$source.filter(&quot;FunctionalAnalysisArchitecture&quot;) != null%>">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="designArchitecture" valueExpression="&lt;%$target%>"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </optionalLayers>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description:DiagramDescription" name="Structure of Functional Analysis Architecture" titleExpression="Structure of &lt;%name%>" domainClass="FunctionalAnalysisArchitecture">
+      <defaultLayer name="Function definition" reusedTools="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Reusing']/@defaultLayer/@toolSections.0/@ownedTools[name='Name%20direct%20edit']">
+        <containerMappings name="Analysis Function" detailDescriptions="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@toolSections.0/@ownedTools[name='Internal%20structure%20of%20Analysis%20Function']" preconditionExpression="&lt;%$container == eContainer()%>" labelDirectEdit="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Reusing']/@defaultLayer/@toolSections.0/@ownedTools[name='Name%20direct%20edit']" semanticCandidatesExpression="&lt;%current.analysisFunctions%>" domainClass="AnalysisFunction">
+          <subNodeMappings name="Parameter" labelDirectEdit="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Reusing']/@defaultLayer/@toolSections.0/@ownedTools[name='Name%20direct%20edit']" semanticCandidatesExpression="&lt;%parameters%>" domainClass="common.Parameter">
+            <style xsi:type="style:BundledImageDescription" sizeComputationExpression="2" shape="dot">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="Functional Device" preconditionExpression="&lt;%$container == eContainer()%>" semanticCandidatesExpression="&lt;%current.functionalDevices%>" domainClass="FunctionalDevice">
+          <subNodeMappings name="Parameter" semanticCandidatesExpression="&lt;%parameters%>" domainClass="common.Parameter">
+            <style xsi:type="style:BundledImageDescription" sizeComputationExpression="2" shape="dot">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style>
+        </containerMappings>
+        <toolSections name="Tools">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Analysis function" containerMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@containerMappings[name='Analysis%20Function']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="&lt;%$container%>">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="AnalysisFunction" referenceName="analysisFunctions">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="AnalysisFunction_&lt;%$container.analysisFunctions[eClass().name == &quot;AnalysisFunction&quot;].nSize()%>"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Environment Function" containerMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@containerMappings[name='Analysis%20Function']" iconPath="/org.obeonetwork.dsl.eastadl.design/icons/EnvironmentFunction.gif">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="&lt;%$container%>">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="EnvironmentFunction" referenceName="analysisFunctions">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="EnvironmentFunction_&lt;%$container.analysisFunctions[eClass().name == &quot;EnvironmentFunction&quot;].nSize()%>"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Functional Device" containerMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@containerMappings[name='Functional%20Device']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="&lt;%$container%>">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="FunctionalDevice" referenceName="functionalDevices">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="FunctionalDevice_&lt;%$container.functionalDevices.nSize()%>"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Parameter" nodeMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@containerMappings[name='Analysis%20Function']/@subNodeMappings[name='Parameter'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@containerMappings[name='Functional%20Device']/@subNodeMappings[name='Parameter']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="&lt;%$container%>">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="common.Parameter" referenceName="parameters">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="Parameter_&lt;%$container.parameters.nSize()%>"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DiagramCreationDescription" name="Internal structure of Analysis Function" browseExpression="Internal structure of &lt;%$container.name%>" diagramDescription="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']">
+            <initialOperation/>
+            <containerViewVariable name="containerView"/>
+            <representationNameVariable name="diagramName"/>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+      <optionalLayers name="Ports">
+        <containerMappings xsi:type="description:ContainerMappingImport" name="Import analysis function" detailDescriptions="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@toolSections.0/@ownedTools[name='Internal%20structure%20of%20Analysis%20Function']" preconditionExpression="&lt;%$container == eContainer()%>" semanticCandidatesExpression="&lt;%current.analysisFunctions%>" reusedNodeMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@containerMappings[name='Analysis%20Function']/@subNodeMappings[name='Parameter']" importedMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@containerMappings[name='Analysis%20Function']">
+          <borderedNodeMappings name="Signal Function Port" preconditionExpression="&lt;%$container == eContainer()%>" labelDirectEdit="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Reusing']/@defaultLayer/@toolSections.0/@ownedTools[name='Name%20direct%20edit']" semanticCandidatesExpression="&lt;%current.eAllContents%>" domainClass="SignalFunctionPort">
+            <conditionnalStyles predicateExpression="&lt;%provided == &quot;true&quot;%>">
+              <style xsi:type="style:BundledImageDescription" sizeComputationExpression="2">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="&lt;%provided == &quot;false&quot;%>">
+              <style xsi:type="style:BundledImageDescription" sizeComputationExpression="2">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+              </style>
+            </conditionnalStyles>
+          </borderedNodeMappings>
+          <borderedNodeMappings name="Operation Function Port" preconditionExpression="&lt;%$container == eContainer()%>" semanticCandidatesExpression="&lt;%current.eAllContents%>" domainClass="OperationFunctionPort">
+            <conditionnalStyles predicateExpression="&lt;%provided == &quot;true&quot;%>">
+              <style xsi:type="style:BundledImageDescription" sizeComputationExpression="2">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="&lt;%provided == &quot;false&quot;%>">
+              <style xsi:type="style:BundledImageDescription" sizeComputationExpression="2">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+              </style>
+            </conditionnalStyles>
+          </borderedNodeMappings>
+        </containerMappings>
+        <containerMappings xsi:type="description:ContainerMappingImport" name="Import functional device" preconditionExpression="&lt;%$container == eContainer()%>" semanticCandidatesExpression="&lt;%current.functionalDevices%>" domainClass="FunctionalDevice" reusedNodeMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@containerMappings[name='Functional%20Device']/@subNodeMappings[name='Parameter']" importedMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@containerMappings[name='Functional%20Device']">
+          <borderedNodeMappings name="Signal Function Port" preconditionExpression="&lt;%$container == eContainer()%>" semanticCandidatesExpression="&lt;%current.eAllContents%>" domainClass="SignalFunctionPort">
+            <conditionnalStyles predicateExpression="&lt;%provided == &quot;true&quot;%>">
+              <style xsi:type="style:BundledImageDescription" sizeComputationExpression="2">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="&lt;%provided == &quot;false&quot;%>">
+              <style xsi:type="style:BundledImageDescription" sizeComputationExpression="2">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+              </style>
+            </conditionnalStyles>
+          </borderedNodeMappings>
+          <borderedNodeMappings name="Operation Function Port" preconditionExpression="&lt;%$container == eContainer()%>" semanticCandidatesExpression="&lt;%current.eAllContents%>" domainClass="OperationFunctionPort">
+            <conditionnalStyles predicateExpression="&lt;%provided == &quot;true&quot;%>">
+              <style xsi:type="style:BundledImageDescription" sizeComputationExpression="2">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="&lt;%provided == &quot;false&quot;%>">
+              <style xsi:type="style:BundledImageDescription" sizeComputationExpression="2">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+              </style>
+            </conditionnalStyles>
+          </borderedNodeMappings>
+        </containerMappings>
+        <toolSections name="Tools">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Provided signal function port" nodeMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20analysis%20function']/@borderedNodeMappings[name='Signal%20Function%20Port'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20functional%20device']/@borderedNodeMappings[name='Signal%20Function%20Port']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="&lt;%$container%>">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="SignalFunctionPort" referenceName="ports">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="provided" valueExpression="true"/>
+                  <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="ProvidedSignal_&lt;%$container.ports.filter(&quot;SignalFunctionPort&quot;)[provided == &quot;true&quot;].nSize()%>"/>
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="SignalFunctionPortInterface" referenceName="interface">
+                    <subModelOperations xsi:type="tool:SetValue" featureName="typedPort" valueExpression="&lt;%eContainer()%>"/>
+                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="ProvidedSignalPortInterface_&lt;%typedPort.eContainer().ports.filter(&quot;SignalFunctionPort&quot;)[provided == &quot;true&quot;].nSize()%>"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Required signal function port" nodeMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20analysis%20function']/@borderedNodeMappings[name='Signal%20Function%20Port'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20functional%20device']/@borderedNodeMappings[name='Signal%20Function%20Port']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="&lt;%$container%>">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="SignalFunctionPort" referenceName="ports">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="provided" valueExpression="false"/>
+                  <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="RequiredSignal_&lt;%$container.ports.filter(&quot;SignalFunctionPort&quot;)[provided == &quot;false&quot;].nSize()%>"/>
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="SignalFunctionPortInterface" referenceName="interface">
+                    <subModelOperations xsi:type="tool:SetValue" featureName="typedPort" valueExpression="&lt;%eContainer()%>"/>
+                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="RequiredSignalPortInterface_&lt;%typedPort.eContainer().ports.filter(&quot;SignalFunctionPort&quot;)[provided == &quot;false&quot;].nSize()%>"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Provided operation function port" nodeMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20analysis%20function']/@borderedNodeMappings[name='Operation%20Function%20Port'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20functional%20device']/@borderedNodeMappings[name='Operation%20Function%20Port']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="&lt;%$container%>">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="OperationFunctionPort" referenceName="ports">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="provided" valueExpression="true"/>
+                  <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="ProvidedOperation_&lt;%$container.ports.filter(&quot;OperationFunctionPort&quot;)[provided == &quot;true&quot;].nSize()%>"/>
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="OperationFunctionPortInterface" referenceName="interface">
+                    <subModelOperations xsi:type="tool:SetValue" featureName="typedPort" valueExpression="&lt;%eContainer()%>"/>
+                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="ProvidedOperationPortInterface_&lt;%typedPort.eContainer().ports.filter(&quot;OperationFunctionPort&quot;)[provided == &quot;true&quot;].nSize()%>"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Required operation function port" nodeMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20analysis%20function']/@borderedNodeMappings[name='Operation%20Function%20Port'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20functional%20device']/@borderedNodeMappings[name='Operation%20Function%20Port']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="&lt;%$container%>">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="OperationFunctionPort" referenceName="ports">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="provided" valueExpression="false"/>
+                  <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="RequiredOperation_&lt;%$container.ports.filter(&quot;OperationFunctionPort&quot;)[provided == &quot;false&quot;].nSize()%>"/>
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="OperationFunctionPortInterface" referenceName="interface">
+                    <subModelOperations xsi:type="tool:SetValue" featureName="typedPort" valueExpression="&lt;%eContainer()%>"/>
+                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="RequiredOperationPortInterface_&lt;%typedPort.eContainer().ports.filter(&quot;OperationFunctionPort&quot;)[provided == &quot;false&quot;].nSize()%>"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </optionalLayers>
+      <optionalLayers name="Signals">
+        <edgeMappings name="Signal connector" semanticCandidatesExpression="&lt;%current.eAllContents%>" sourceMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20analysis%20function']/@borderedNodeMappings[name='Signal%20Function%20Port'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20functional%20device']/@borderedNodeMappings[name='Signal%20Function%20Port']" targetMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20analysis%20function']/@borderedNodeMappings[name='Signal%20Function%20Port'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20functional%20device']/@borderedNodeMappings[name='Signal%20Function%20Port']" targetFinderExpression="&lt;%receiver.typedPort%>" sourceFinderExpression="&lt;%emitter.typedPort%>" domainClass="ConnectorSignal" useDomainElement="true">
+          <style>
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="Operation call" semanticCandidatesExpression="&lt;%current.eAllContents%>" sourceMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20analysis%20function']/@borderedNodeMappings[name='Operation%20Function%20Port'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20functional%20device']/@borderedNodeMappings[name='Operation%20Function%20Port']" targetMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20analysis%20function']/@borderedNodeMappings[name='Operation%20Function%20Port'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20functional%20device']/@borderedNodeMappings[name='Operation%20Function%20Port']" targetFinderExpression="&lt;%receiver.typedPort%>" sourceFinderExpression="&lt;%emitter.typedPort%>" domainClass="OperationCall" useDomainElement="true">
+          <style>
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </edgeMappings>
+        <toolSections name="Tools">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Signal connector" edgeMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Signals']/@edgeMappings[name='Signal%20connector']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="&lt;%$source.eContainer(&quot;FunctionalAnalysisArchitecture&quot;)%>">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="ConnectorSignal" referenceName="connectorSignals">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="&lt;%$source.name%>_to_&lt;%$target.name%>_signal"/>
+                  <subModelOperations xsi:type="tool:SetValue" featureName="emitter" valueExpression="&lt;%$source.getInterface()%>"/>
+                  <subModelOperations xsi:type="tool:SetValue" featureName="receiver" valueExpression="&lt;%$target.getInterface()%>"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Operation call" edgeMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Signals']/@edgeMappings[name='Operation%20call']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="&lt;%$source.eContainer(&quot;FunctionalAnalysisArchitecture&quot;)%>">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="OperationCall" referenceName="operationCalls">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="&lt;%$source.name%>_to_&lt;%$target.name%>_call"/>
+                  <subModelOperations xsi:type="tool:SetValue" featureName="emitter" valueExpression="&lt;%$source.interface%>"/>
+                  <subModelOperations xsi:type="tool:SetValue" featureName="receiver" valueExpression="&lt;%$target.interface%>"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </optionalLayers>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description:DiagramDescription" name="Internal structure of Analysis Function" titleExpression="Structure of &lt;%name%>" domainClass="AnalysisFunction">
+      <filters xsi:type="filter:CompositeFilterDescription" name="Parameter">
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@defaultLayer/@containerMappings[name='Internal%20Analysis%20Function']/@subNodeMappings[name='Internal%20Parameter'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@containerMappings[name='Analysis%20Function']/@subNodeMappings[name='Parameter'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@optionalLayers[name='Internal%20Ports']/@containerMappings[name='Internal%20import%20analysis%20function']/@subNodeMappings[name='Import%20Internal%20Parameter']"/>
+      </filters>
+      <defaultLayer name="Internal Function definition" reusedTools="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Reusing']/@defaultLayer/@toolSections.0/@ownedTools[name='Name%20direct%20edit']">
+        <containerMappings name="Internal Analysis Function" detailDescriptions="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@toolSections.0/@ownedTools[name='Internal%20structure%20of%20Analysis%20Function']" preconditionExpression="&lt;%eContainer() == $container%>" semanticCandidatesExpression="&lt;%current.subFunctions%>" domainClass="AnalysisFunction">
+          <subNodeMappings name="Internal Parameter" preconditionExpression="&lt;%$container == eContainer()%>" labelDirectEdit="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Reusing']/@defaultLayer/@toolSections.0/@ownedTools[name='Name%20direct%20edit']" semanticCandidatesExpression="&lt;%current.eAllContents%>" domainClass="common.Parameter">
+            <style xsi:type="style:BundledImageDescription" sizeComputationExpression="2" shape="dot">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style>
+        </containerMappings>
+        <toolSections name="Tools">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Internal Analysis function" containerMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@defaultLayer/@containerMappings[name='Internal%20Analysis%20Function']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="&lt;%$container%>">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="AnalysisFunction" referenceName="subFunctions">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="AnalysisFunction_&lt;%$container.subFunctions.nSize()%>"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Internal Parameter" nodeMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@defaultLayer/@containerMappings[name='Internal%20Analysis%20Function']/@subNodeMappings[name='Internal%20Parameter'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@optionalLayers[name='Internal%20Ports']/@containerMappings[name='Internal%20import%20analysis%20function']/@subNodeMappings[name='Import%20Internal%20Parameter']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="&lt;%$container%>">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="common.Parameter" referenceName="parameters">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="Parameter_&lt;%$container.parameters.nSize()%>"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+      <optionalLayers name="Internal Ports">
+        <containerMappings xsi:type="description:ContainerMappingImport" name="Internal import analysis function" detailDescriptions="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@toolSections.0/@ownedTools[name='Internal%20structure%20of%20Analysis%20Function']" preconditionExpression="&lt;%$container == eContainer()%>" labelDirectEdit="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Reusing']/@defaultLayer/@toolSections.0/@ownedTools[name='Name%20direct%20edit']" semanticCandidatesExpression="&lt;%current.subFunctions%>" domainClass="AnalysisFunction" reusedNodeMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@defaultLayer/@containerMappings[name='Internal%20Analysis%20Function']/@subNodeMappings[name='Internal%20Parameter']" importedMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@defaultLayer/@containerMappings[name='Internal%20Analysis%20Function']">
+          <borderedNodeMappings name="Internal Signal Function Port" preconditionExpression="&lt;%$container == eContainer()%>" semanticCandidatesExpression="&lt;%current.ports%>" domainClass="SignalFunctionPort">
+            <conditionnalStyles predicateExpression="&lt;%provided == &quot;true&quot;%>">
+              <style xsi:type="style:BundledImageDescription" sizeComputationExpression="2">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='chocolate']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="&lt;%provided == &quot;false&quot;%>">
+              <style xsi:type="style:BundledImageDescription" sizeComputationExpression="2">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+          </borderedNodeMappings>
+          <borderedNodeMappings name="Internal Operation Function Port" preconditionExpression="&lt;%$container == eContainer()%>" semanticCandidatesExpression="&lt;%current.ports%>" domainClass="OperationFunctionPort">
+            <conditionnalStyles predicateExpression="&lt;%provided == &quot;true&quot;%>">
+              <style xsi:type="style:BundledImageDescription" sizeComputationExpression="2">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='chocolate']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="&lt;%provided == &quot;false&quot;%>">
+              <style xsi:type="style:BundledImageDescription" sizeComputationExpression="2">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+          </borderedNodeMappings>
+          <subNodeMappings xsi:type="description:NodeMappingImport" name="Import Internal Parameter" preconditionExpression="&lt;%$container == eContainer()%>" semanticCandidatesExpression="&lt;%current.eAllContents%>" importedMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@defaultLayer/@containerMappings[name='Internal%20Analysis%20Function']/@subNodeMappings[name='Internal%20Parameter']"/>
+        </containerMappings>
+        <toolSections name="Tools">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Internal Provided signal function port" nodeMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@optionalLayers[name='Internal%20Ports']/@containerMappings[name='Internal%20import%20analysis%20function']/@borderedNodeMappings[name='Internal%20Signal%20Function%20Port']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="&lt;%$container%>">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="SignalFunctionPort" referenceName="ports">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="provided" valueExpression="true"/>
+                  <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="InProvidedSignal_&lt;%$container.ports.filter(&quot;SignalFunctionPort&quot;)[provided == &quot;true&quot;].nSize()%>"/>
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="SignalFunctionPortInterface" referenceName="interface">
+                    <subModelOperations xsi:type="tool:SetValue" featureName="typedPort" valueExpression="&lt;%eContainer()%>"/>
+                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="InProvidedSignalPortInterface_&lt;%typedPort.eContainer().ports.filter(&quot;SignalFunctionPort&quot;)[provided == &quot;true&quot;].nSize()%>"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Internal Required signal function port" nodeMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@optionalLayers[name='Internal%20Ports']/@containerMappings[name='Internal%20import%20analysis%20function']/@borderedNodeMappings[name='Internal%20Signal%20Function%20Port']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="&lt;%$container%>">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="SignalFunctionPort" referenceName="ports">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="provided" valueExpression="false"/>
+                  <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="InRequiredSignal_&lt;%$container.ports.filter(&quot;SignalFunctionPort&quot;)[provided == &quot;false&quot;].nSize()%>"/>
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="SignalFunctionPortInterface" referenceName="interface">
+                    <subModelOperations xsi:type="tool:SetValue" featureName="typedPort" valueExpression="&lt;%eContainer()%>"/>
+                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="InRequiredSignalPortInterface_&lt;%typedPort.eContainer().ports.filter(&quot;SignalFunctionPort&quot;)[provided == &quot;false&quot;].nSize()%>"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Internal Provided operation function port" nodeMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@optionalLayers[name='Internal%20Ports']/@containerMappings[name='Internal%20import%20analysis%20function']/@borderedNodeMappings[name='Internal%20Operation%20Function%20Port']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="&lt;%$container%>">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="OperationFunctionPort" referenceName="ports">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="provided" valueExpression="true"/>
+                  <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="ProvidedOperation_&lt;%$container.ports.filter(&quot;OperationFunctionPort&quot;)[provided == &quot;true&quot;].nSize()%>"/>
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="OperationFunctionPortInterface" referenceName="interface">
+                    <subModelOperations xsi:type="tool:SetValue" featureName="typedPort" valueExpression="&lt;%eContainer()%>"/>
+                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="InProvidedOperationPortInterface_&lt;%typedPort.eContainer().ports.filter(&quot;OperationFunctionPort&quot;)[provided == &quot;true&quot;].nSize()%>"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Internal Required operation function port" nodeMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@optionalLayers[name='Internal%20Ports']/@containerMappings[name='Internal%20import%20analysis%20function']/@borderedNodeMappings[name='Internal%20Operation%20Function%20Port']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="&lt;%$container%>">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="OperationFunctionPort" referenceName="ports">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="provided" valueExpression="false"/>
+                  <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="RequiredOperation_&lt;%$container.ports.filter(&quot;OperationFunctionPort&quot;)[provided == &quot;false&quot;].nSize()%>"/>
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="OperationFunctionPortInterface" referenceName="interface">
+                    <subModelOperations xsi:type="tool:SetValue" featureName="typedPort" valueExpression="&lt;%eContainer()%>"/>
+                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="InRequiredOperationPortInterface_&lt;%typedPort.eContainer().ports.filter(&quot;OperationFunctionPort&quot;)[provided == &quot;false&quot;].nSize()%>"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </optionalLayers>
+      <optionalLayers name="Internal Signals">
+        <edgeMappings name="Internal Signal connector" semanticCandidatesExpression="&lt;%eContainer(&quot;FunctionalAnalysisArchitecture&quot;).connectorSignals%>" sourceMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@optionalLayers[name='Internal%20Ports']/@containerMappings[name='Internal%20import%20analysis%20function']/@borderedNodeMappings[name='Internal%20Signal%20Function%20Port']" targetMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@optionalLayers[name='Internal%20Ports']/@containerMappings[name='Internal%20import%20analysis%20function']/@borderedNodeMappings[name='Internal%20Signal%20Function%20Port']" targetFinderExpression="&lt;%receiver.typedPort%>" sourceFinderExpression="&lt;%emitter.typedPort%>" domainClass="ConnectorSignal" useDomainElement="true">
+          <style>
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="Internal Operation call" semanticCandidatesExpression="&lt;%eContainer(&quot;FunctionalAnalysisArchitecture&quot;).operationCalls%>" sourceMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@optionalLayers[name='Internal%20Ports']/@containerMappings[name='Internal%20import%20analysis%20function']/@borderedNodeMappings[name='Internal%20Operation%20Function%20Port']" targetMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@optionalLayers[name='Internal%20Ports']/@containerMappings[name='Internal%20import%20analysis%20function']/@borderedNodeMappings[name='Internal%20Operation%20Function%20Port']" targetFinderExpression="&lt;%receiver.typedPort%>" sourceFinderExpression="&lt;%emitter.typedPort%>" domainClass="OperationCall" useDomainElement="true">
+          <style>
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </edgeMappings>
+        <toolSections name="Tools">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Internal Signal connector" edgeMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@optionalLayers[name='Internal%20Signals']/@edgeMappings[name='Internal%20Signal%20connector']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="&lt;%$source.eContainer(&quot;FunctionalAnalysisArchitecture&quot;)%>">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="ConnectorSignal" referenceName="connectorSignals">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="&lt;%$source.name%>_to_&lt;%$target.name%>_signal"/>
+                  <subModelOperations xsi:type="tool:SetValue" featureName="emitter" valueExpression="&lt;%$source.interface%>"/>
+                  <subModelOperations xsi:type="tool:SetValue" featureName="receiver" valueExpression="&lt;%$target.interface%>"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Internal Operation call" edgeMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@optionalLayers[name='Internal%20Signals']/@edgeMappings[name='Internal%20Operation%20call']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="&lt;%$source.eContainer(&quot;FunctionalAnalysisArchitecture&quot;)%>">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="OperationCall" referenceName="operationCalls">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="&lt;%$source.name%>_to_&lt;%$target.name%>_call"/>
+                  <subModelOperations xsi:type="tool:SetValue" featureName="emitter" valueExpression="&lt;%$source.interface%>"/>
+                  <subModelOperations xsi:type="tool:SetValue" featureName="receiver" valueExpression="&lt;%$target.interface%>"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </optionalLayers>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description:DiagramDescription" name="Reusing" domainClass="" preconditionExpression="&lt;%false%>">
+      <defaultLayer name="Reusing">
+        <containerMappings name="GhostContainer" preconditionExpression="&lt;%false%>" semanticCandidatesExpression="&lt;%current.eAllContents%>" domainClass="EASTADLNamedElement">
+          <style xsi:type="style:FlatContainerStyleDescription">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style>
+        </containerMappings>
+        <toolSections name="Reused tools">
+          <ownedTools xsi:type="tool:DirectEditLabel" name="Name direct edit">
+            <mask mask="{0}"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="&lt;%$0%>"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+  </ownedViewpoints>
+</description:Group>

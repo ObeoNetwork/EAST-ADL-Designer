@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<east_adl:EASTADLModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:common="http://www.topcased.org/0.11.0/east_adl/structure/common" xmlns:east_adl="http://www.topcased.org/0.11.0/east_adl" xmlns:functional_analysis_architecture="http://www.topcased.org/0.11.0/east_adl/structure/functional_analysis_architecture" xmlns:functional_design_architecture="http://www.topcased.org/0.11.0/east_adl/structure/functional_design_architecture" xmlns:vehicle_feature_model="http://www.topcased.org/0.11.0/east_adl/structure/vehicle_feature_model">
+  <artifacts xsi:type="vehicle_feature_model:VehicleFeatureModel" name="VehicleFeatureModel_1" analysisArchitecture="//@artifacts.1"/>
+  <artifacts xsi:type="functional_analysis_architecture:FunctionalAnalysisArchitecture" name="FunctionalAnalysisArchitecture_1" vehicleModel="//@artifacts.0" designArchitecture="//@artifacts.2">
+    <analysisFunctions name="hmi">
+      <ports xsi:type="common:SignalFunctionPort" name="targetDistance">
+        <interface xsi:type="common:SignalFunctionPortInterface" receivedSignals="//@artifacts.1/@connectorSignals.0"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <ports xsi:type="common:SignalFunctionPort" name="desiredDistance">
+        <interface xsi:type="common:SignalFunctionPortInterface" receivedSignals="//@artifacts.1/@connectorSignals.2"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+    </analysisFunctions>
+    <analysisFunctions name="perception">
+      <ports xsi:type="common:SignalFunctionPort" name="realTargetDistance" provided="true">
+        <interface xsi:type="common:SignalFunctionPortInterface" emitedSignals="//@artifacts.1/@connectorSignals.0"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <ports xsi:type="common:SignalFunctionPort" name="rainIntensity" provided="true">
+        <interface xsi:type="common:SignalFunctionPortInterface" emitedSignals="//@artifacts.1/@connectorSignals.1"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+    </analysisFunctions>
+    <analysisFunctions name="vehiculeApplication">
+      <ports xsi:type="common:SignalFunctionPort" name="rainIntensity">
+        <interface xsi:type="common:SignalFunctionPortInterface" receivedSignals="//@artifacts.1/@connectorSignals.1"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <ports xsi:type="common:SignalFunctionPort" name="desiredDistance" provided="true">
+        <interface xsi:type="common:SignalFunctionPortInterface" emitedSignals="//@artifacts.1/@connectorSignals.2"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <subFunctions name="AnalysisFunction_1">
+        <ports xsi:type="common:SignalFunctionPort" name="InProvidedSignal_1" provided="true">
+          <interface xsi:type="common:SignalFunctionPortInterface" name="InProvidedSignalPortInterface_1" emitedSignals="//@artifacts.1/@connectorSignals.3"/>
+        </ports>
+      </subFunctions>
+      <subFunctions name="AnalysisFunction_2">
+        <ports xsi:type="common:SignalFunctionPort" name="InRequiredSignal_1">
+          <interface xsi:type="common:SignalFunctionPortInterface" name="InRequiredSignalPortInterface_1" receivedSignals="//@artifacts.1/@connectorSignals.3"/>
+        </ports>
+      </subFunctions>
+    </analysisFunctions>
+    <analysisFunctions name="vda"/>
+    <connectorSignals name="realTargetDistance_to_targetDistance_signal" emitter="//@artifacts.1/@analysisFunctions.1/@ports.0/@interface" receiver="//@artifacts.1/@analysisFunctions.0/@ports.0/@interface">
+      <period>
+        <upper/>
+        <lower/>
+        <nominal/>
+        <jitter/>
+      </period>
+    </connectorSignals>
+    <connectorSignals name="rainIntensity_to_rainIntensity_signal" emitter="//@artifacts.1/@analysisFunctions.1/@ports.1/@interface" receiver="//@artifacts.1/@analysisFunctions.2/@ports.0/@interface">
+      <period>
+        <upper/>
+        <lower/>
+        <nominal/>
+        <jitter/>
+      </period>
+    </connectorSignals>
+    <connectorSignals name="desiredDistance_to_desiredDistance_signal" emitter="//@artifacts.1/@analysisFunctions.2/@ports.1/@interface" receiver="//@artifacts.1/@analysisFunctions.0/@ports.1/@interface">
+      <period>
+        <upper/>
+        <lower/>
+        <nominal/>
+        <jitter/>
+      </period>
+    </connectorSignals>
+    <connectorSignals name="InProvidedSignal_1_to_InRequiredSignal_1_signal" emitter="//@artifacts.1/@analysisFunctions.2/@subFunctions.0/@ports.0/@interface" receiver="//@artifacts.1/@analysisFunctions.2/@subFunctions.1/@ports.0/@interface"/>
+  </artifacts>
+  <artifacts xsi:type="functional_design_architecture:FunctionalDesignArchitecture" name="FunctionalDesignArchitecure_1" analysisArchitecture="//@artifacts.1"/>
+</east_adl:EASTADLModel>

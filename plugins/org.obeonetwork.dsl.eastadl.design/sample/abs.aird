@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:common="http://www.topcased.org/0.11.0/east_adl/structure/common" xmlns:description="http://www.obeo.fr/dsl/viewpoint/description/1.1.0" xmlns:east_adl="http://www.topcased.org/0.11.0/east_adl" xmlns:functional_analysis_architecture="http://www.topcased.org/0.11.0/east_adl/structure/functional_analysis_architecture" xmlns:functional_design_architecture="http://www.topcased.org/0.11.0/east_adl/structure/functional_design_architecture" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.obeo.fr/dsl/viewpoint/description/style/1.1.0" xmlns:vehicle_feature_model="http://www.topcased.org/0.11.0/east_adl/structure/vehicle_feature_model" xmlns:viewpoint="http://www.obeo.fr/dsl/viewpoint/1.1.0" xsi:schemaLocation="http://www.topcased.org/0.11.0/east_adl/structure/common http://www.topcased.org/0.11.0/east_adl#//structure/common http://www.obeo.fr/dsl/viewpoint/description/1.1.0 http://www.obeo.fr/dsl/viewpoint/1.1.0#//description http://www.topcased.org/0.11.0/east_adl/structure/functional_analysis_architecture http://www.topcased.org/0.11.0/east_adl#//structure/functional_analysis_architecture http://www.topcased.org/0.11.0/east_adl/structure/functional_design_architecture http://www.topcased.org/0.11.0/east_adl#//structure/functional_design_architecture http://www.obeo.fr/dsl/viewpoint/description/style/1.1.0 http://www.obeo.fr/dsl/viewpoint/1.1.0#//description/style http://www.topcased.org/0.11.0/east_adl/structure/vehicle_feature_model http://www.topcased.org/0.11.0/east_adl#//structure/vehicle_feature_model" xmi:id="__tsIcFH9EeOiV_gEc3pYkQ" selectedViews="_AGiGQFH-EeOiV_gEc3pYkQ">
+  <models xmi:type="east_adl:EASTADLModel" href="abs.east_adl#/"/>
+  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_AGiGQFH-EeOiV_gEc3pYkQ" initialized="true">
+    <ownedRepresentations xmi:type="viewpoint:DSemanticDiagram" xmi:id="_AG-LIFH-EeOiV_gEc3pYkQ" name="EAST-ADL System">
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_AHBOcFH-EeOiV_gEc3pYkQ" source="GMF_DIAGRAMS">
+        <data xmi:type="notation:Diagram" xmi:id="_AHB1gFH-EeOiV_gEc3pYkQ" type="Viewpoint" element="_AG-LIFH-EeOiV_gEc3pYkQ" measurementUnit="Pixel">
+          <children xmi:type="notation:Node" xmi:id="_AHERwFH-EeOiV_gEc3pYkQ" type="2002" element="_AG-LIVH-EeOiV_gEc3pYkQ">
+            <children xmi:type="notation:Node" xmi:id="_AHIjMFH-EeOiV_gEc3pYkQ" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_AHJKQFH-EeOiV_gEc3pYkQ" type="7001">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_AHJKQVH-EeOiV_gEc3pYkQ"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_AHJKQlH-EeOiV_gEc3pYkQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_AHERwVH-EeOiV_gEc3pYkQ" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AHERwlH-EeOiV_gEc3pYkQ" x="260" y="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AHJKQ1H-EeOiV_gEc3pYkQ" type="2002" element="_AG-LJ1H-EeOiV_gEc3pYkQ">
+            <children xmi:type="notation:Node" xmi:id="_AHJxUFH-EeOiV_gEc3pYkQ" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_AHJxUVH-EeOiV_gEc3pYkQ" type="7001">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_AHJxUlH-EeOiV_gEc3pYkQ"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_AHJxU1H-EeOiV_gEc3pYkQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_AHJKRFH-EeOiV_gEc3pYkQ" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AHJKRVH-EeOiV_gEc3pYkQ" x="250" y="185"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AHJxVFH-EeOiV_gEc3pYkQ" type="2002" element="_AG-LLVH-EeOiV_gEc3pYkQ">
+            <children xmi:type="notation:Node" xmi:id="_AHKYYFH-EeOiV_gEc3pYkQ" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_AHKYYVH-EeOiV_gEc3pYkQ" type="7001">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_AHKYYlH-EeOiV_gEc3pYkQ"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_AHKYY1H-EeOiV_gEc3pYkQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_AHJxVVH-EeOiV_gEc3pYkQ" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AHJxVlH-EeOiV_gEc3pYkQ" x="265" y="360"/>
+          </children>
+          <styles xmi:type="notation:DiagramStyle" xmi:id="_AHB1gVH-EeOiV_gEc3pYkQ"/>
+          <edges xmi:type="notation:Edge" xmi:id="_BIQpAFH-EeOiV_gEc3pYkQ" type="4001" element="_BILwgFH-EeOiV_gEc3pYkQ" source="_AHERwFH-EeOiV_gEc3pYkQ" target="_AHJKQ1H-EeOiV_gEc3pYkQ">
+            <children xmi:type="notation:Node" xmi:id="_BIR3IFH-EeOiV_gEc3pYkQ" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BIR3IVH-EeOiV_gEc3pYkQ" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_BITsUFH-EeOiV_gEc3pYkQ" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BITsUVH-EeOiV_gEc3pYkQ" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_BIUTYFH-EeOiV_gEc3pYkQ" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BIUTYVH-EeOiV_gEc3pYkQ" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_BIQpAVH-EeOiV_gEc3pYkQ"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_BIQpAlH-EeOiV_gEc3pYkQ" fontName="Segoe UI"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_BIQpA1H-EeOiV_gEc3pYkQ" points="[130, 200, 130, 200]$[210, -1, 210, -1]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_BIX9wFH-EeOiV_gEc3pYkQ" id="(0.49333333333333335,0.9857142857142858)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_BIX9wVH-EeOiV_gEc3pYkQ" id="(0.4739583333333333,0.0)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_BIYk0FH-EeOiV_gEc3pYkQ" type="4001" element="_BIM-oFH-EeOiV_gEc3pYkQ" source="_AHJKQ1H-EeOiV_gEc3pYkQ" target="_AHJxVFH-EeOiV_gEc3pYkQ">
+            <children xmi:type="notation:Node" xmi:id="_BIYk1FH-EeOiV_gEc3pYkQ" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BIYk1VH-EeOiV_gEc3pYkQ" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_BIYk1lH-EeOiV_gEc3pYkQ" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BIYk11H-EeOiV_gEc3pYkQ" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_BIZL4FH-EeOiV_gEc3pYkQ" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BIZL4VH-EeOiV_gEc3pYkQ" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_BIYk0VH-EeOiV_gEc3pYkQ"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_BIYk0lH-EeOiV_gEc3pYkQ" fontName="Segoe UI"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_BIYk01H-EeOiV_gEc3pYkQ" points="[210, -1, 210, -1]$[460, -1, 460, -1]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_BIZL4lH-EeOiV_gEc3pYkQ" id="(0.484375,0.9428571428571428)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_BIZL41H-EeOiV_gEc3pYkQ" id="(0.453551912568306,0.014285714285714285)"/>
+          </edges>
+        </data>
+      </ownedAnnotationEntries>
+      <ownedDiagramElements xmi:type="viewpoint:DNodeContainer" xmi:id="_AG-LIVH-EeOiV_gEc3pYkQ" name="VehicleFeatureModel_1" outgoingEdges="_BILwgFH-EeOiV_gEc3pYkQ">
+        <target xmi:type="vehicle_feature_model:VehicleFeatureModel" href="abs.east_adl#//@artifacts.0"/>
+        <semanticElements xmi:type="vehicle_feature_model:VehicleFeatureModel" href="abs.east_adl#//@artifacts.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="viewpoint:FlatContainerStyle" xmi:id="_AG-LIlH-EeOiV_gEc3pYkQ">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_AG-LI1H-EeOiV_gEc3pYkQ"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST-ADL%20System']/@defaultLayer/@containerMappings[name='Vehicle%20Feature%20Model']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_AG-LJFH-EeOiV_gEc3pYkQ"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_AG-LJVH-EeOiV_gEc3pYkQ" red="114" green="159" blue="207"/>
+          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_AG-LJlH-EeOiV_gEc3pYkQ" red="194" green="239" blue="255"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description:ContainerMapping" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST-ADL%20System']/@defaultLayer/@containerMappings[name='Vehicle%20Feature%20Model']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="viewpoint:DNodeContainer" xmi:id="_AG-LJ1H-EeOiV_gEc3pYkQ" name="FunctionalAnalysisArchitecture_1" outgoingEdges="_BIM-oFH-EeOiV_gEc3pYkQ" incomingEdges="_BILwgFH-EeOiV_gEc3pYkQ">
+        <target xmi:type="functional_analysis_architecture:FunctionalAnalysisArchitecture" href="abs.east_adl#//@artifacts.1"/>
+        <semanticElements xmi:type="functional_analysis_architecture:FunctionalAnalysisArchitecture" href="abs.east_adl#//@artifacts.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="viewpoint:FlatContainerStyle" xmi:id="_AG-LKFH-EeOiV_gEc3pYkQ">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_AG-LKVH-EeOiV_gEc3pYkQ"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST-ADL%20System']/@defaultLayer/@containerMappings[name='Functional%20Analysis%20Architecture']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_AG-LKlH-EeOiV_gEc3pYkQ"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_AG-LK1H-EeOiV_gEc3pYkQ" red="114" green="159" blue="207"/>
+          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_AG-LLFH-EeOiV_gEc3pYkQ" red="194" green="239" blue="255"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description:ContainerMapping" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST-ADL%20System']/@defaultLayer/@containerMappings[name='Functional%20Analysis%20Architecture']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="viewpoint:DNodeContainer" xmi:id="_AG-LLVH-EeOiV_gEc3pYkQ" name="FunctionalDesignArchitecure_1" incomingEdges="_BIM-oFH-EeOiV_gEc3pYkQ">
+        <target xmi:type="functional_design_architecture:FunctionalDesignArchitecture" href="abs.east_adl#//@artifacts.2"/>
+        <semanticElements xmi:type="functional_design_architecture:FunctionalDesignArchitecture" href="abs.east_adl#//@artifacts.2"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="viewpoint:FlatContainerStyle" xmi:id="_AG-LLlH-EeOiV_gEc3pYkQ">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_AG-LL1H-EeOiV_gEc3pYkQ"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST-ADL%20System']/@defaultLayer/@containerMappings[name='Functional%20Design%20Architecture']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_AG-LMFH-EeOiV_gEc3pYkQ"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_AG-LMVH-EeOiV_gEc3pYkQ" red="114" green="159" blue="207"/>
+          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_AG-LMlH-EeOiV_gEc3pYkQ" red="194" green="239" blue="255"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description:ContainerMapping" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST-ADL%20System']/@defaultLayer/@containerMappings[name='Functional%20Design%20Architecture']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="viewpoint:DEdge" xmi:id="_BILwgFH-EeOiV_gEc3pYkQ" sourceNode="_AG-LIVH-EeOiV_gEc3pYkQ" targetNode="_AG-LJ1H-EeOiV_gEc3pYkQ">
+        <target xmi:type="vehicle_feature_model:VehicleFeatureModel" href="abs.east_adl#//@artifacts.0"/>
+        <ownedStyle xmi:type="viewpoint:EdgeStyle" xmi:id="_BIMXkFH-EeOiV_gEc3pYkQ">
+          <customFeatures>routingStyle</customFeatures>
+          <description xmi:type="style:EdgeStyleDescription" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST-ADL%20System']/@optionalLayers[name='Connections']/@edgeMappings[name='VFM%20to%20FAA']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_BIMXkVH-EeOiV_gEc3pYkQ" red="136" green="136" blue="136"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description:EdgeMapping" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST-ADL%20System']/@optionalLayers[name='Connections']/@edgeMappings[name='VFM%20to%20FAA']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="viewpoint:DEdge" xmi:id="_BIM-oFH-EeOiV_gEc3pYkQ" sourceNode="_AG-LJ1H-EeOiV_gEc3pYkQ" targetNode="_AG-LLVH-EeOiV_gEc3pYkQ">
+        <target xmi:type="functional_analysis_architecture:FunctionalAnalysisArchitecture" href="abs.east_adl#//@artifacts.1"/>
+        <ownedStyle xmi:type="viewpoint:EdgeStyle" xmi:id="_BIM-oVH-EeOiV_gEc3pYkQ">
+          <customFeatures>routingStyle</customFeatures>
+          <description xmi:type="style:EdgeStyleDescription" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST-ADL%20System']/@optionalLayers[name='Connections']/@edgeMappings[name='FAA%20to%20FDA']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_BIM-olH-EeOiV_gEc3pYkQ" red="136" green="136" blue="136"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description:EdgeMapping" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST-ADL%20System']/@optionalLayers[name='Connections']/@edgeMappings[name='FAA%20to%20FDA']"/>
+      </ownedDiagramElements>
+      <description xmi:type="description:DiagramDescription" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST-ADL%20System']"/>
+      <filterVariableHistory xmi:type="viewpoint:FilterVariableHistory" xmi:id="_AG-LM1H-EeOiV_gEc3pYkQ"/>
+      <activatedLayers xmi:type="description:Layer" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST-ADL%20System']/@defaultLayer"/>
+      <activatedLayers xmi:type="description:OptionalLayer" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST-ADL%20System']/@optionalLayers[name='Connections']"/>
+      <target xmi:type="east_adl:EASTADLModel" href="abs.east_adl#/"/>
+    </ownedRepresentations>
+    <ownedRepresentations xmi:type="viewpoint:DSemanticDiagram" xmi:id="_QlBR8FH-EeOiV_gEc3pYkQ" name="Structure of FunctionalAnalysisArchitecture_1">
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_QlB5AFH-EeOiV_gEc3pYkQ" source="GMF_DIAGRAMS">
+        <data xmi:type="notation:Diagram" xmi:id="_QlB5AVH-EeOiV_gEc3pYkQ" type="Viewpoint" element="_QlBR8FH-EeOiV_gEc3pYkQ" measurementUnit="Pixel">
+          <children xmi:type="notation:Node" xmi:id="_QlFjYFH-EeOiV_gEc3pYkQ" type="2002" element="_QlBR8VH-EeOiV_gEc3pYkQ">
+            <children xmi:type="notation:Node" xmi:id="_QlFjY1H-EeOiV_gEc3pYkQ" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_QlFjZFH-EeOiV_gEc3pYkQ" type="7001">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_QlFjZVH-EeOiV_gEc3pYkQ"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_QlFjZlH-EeOiV_gEc3pYkQ"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_RLKr8FH-EeOiV_gEc3pYkQ" type="3012" element="_RLCJEFH-EeOiV_gEc3pYkQ">
+              <children xmi:type="notation:Node" xmi:id="_RLL6EFH-EeOiV_gEc3pYkQ" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_RLL6EVH-EeOiV_gEc3pYkQ" x="-37" y="-17"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_RLO9YFH-EeOiV_gEc3pYkQ" type="3004" element="_RLCwIFH-EeOiV_gEc3pYkQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_RLO9YVH-EeOiV_gEc3pYkQ" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RLO9YlH-EeOiV_gEc3pYkQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_RLKr8VH-EeOiV_gEc3pYkQ" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RLKr8lH-EeOiV_gEc3pYkQ" x="140" y="90" width="20" height="20"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_RLNIMFH-EeOiV_gEc3pYkQ" type="3012" element="_RLCwJFH-EeOiV_gEc3pYkQ">
+              <children xmi:type="notation:Node" xmi:id="_RLNvQFH-EeOiV_gEc3pYkQ" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_RLNvQVH-EeOiV_gEc3pYkQ" x="21"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_RLO9Y1H-EeOiV_gEc3pYkQ" type="3004" element="_RLDXMFH-EeOiV_gEc3pYkQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_RLO9ZFH-EeOiV_gEc3pYkQ" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RLO9ZVH-EeOiV_gEc3pYkQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_RLNIMVH-EeOiV_gEc3pYkQ" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RLNIMlH-EeOiV_gEc3pYkQ" x="120" y="-12" width="20" height="20"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_QlFjYVH-EeOiV_gEc3pYkQ" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QlFjYlH-EeOiV_gEc3pYkQ" x="165" y="90" height="233"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_QlGKcFH-EeOiV_gEc3pYkQ" type="2002" element="_QlBR91H-EeOiV_gEc3pYkQ">
+            <children xmi:type="notation:Node" xmi:id="_QlGKc1H-EeOiV_gEc3pYkQ" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_QlGKdFH-EeOiV_gEc3pYkQ" type="7001">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_QlGKdVH-EeOiV_gEc3pYkQ"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_QlGKdlH-EeOiV_gEc3pYkQ"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_RLPkcFH-EeOiV_gEc3pYkQ" type="3012" element="_RLD-QFH-EeOiV_gEc3pYkQ">
+              <children xmi:type="notation:Node" xmi:id="_RLPkc1H-EeOiV_gEc3pYkQ" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_RLPkdFH-EeOiV_gEc3pYkQ" x="-47" y="-17"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_RLQyklH-EeOiV_gEc3pYkQ" type="3004" element="_RLElUFH-EeOiV_gEc3pYkQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_RLQyk1H-EeOiV_gEc3pYkQ" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RLQylFH-EeOiV_gEc3pYkQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_RLPkcVH-EeOiV_gEc3pYkQ" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RLPkclH-EeOiV_gEc3pYkQ" x="-12" y="95" width="20" height="20"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_RLQLgFH-EeOiV_gEc3pYkQ" type="3012" element="_RLElVFH-EeOiV_gEc3pYkQ">
+              <children xmi:type="notation:Node" xmi:id="_RLQykFH-EeOiV_gEc3pYkQ" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_RLQykVH-EeOiV_gEc3pYkQ" x="-31" y="-17"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_RLRZoFH-EeOiV_gEc3pYkQ" type="3004" element="_RLFMYFH-EeOiV_gEc3pYkQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_RLRZoVH-EeOiV_gEc3pYkQ" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RLRZolH-EeOiV_gEc3pYkQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_RLQLgVH-EeOiV_gEc3pYkQ" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RLQLglH-EeOiV_gEc3pYkQ" x="138" y="145" width="20" height="20"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_QlGKcVH-EeOiV_gEc3pYkQ" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QlGKclH-EeOiV_gEc3pYkQ" x="465" y="90" width="148" height="233"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_QlGKd1H-EeOiV_gEc3pYkQ" type="2002" element="_QlBR_VH-EeOiV_gEc3pYkQ">
+            <children xmi:type="notation:Node" xmi:id="_QlGxgFH-EeOiV_gEc3pYkQ" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_QlGxgVH-EeOiV_gEc3pYkQ" type="7001">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_QlGxglH-EeOiV_gEc3pYkQ"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_QlGxg1H-EeOiV_gEc3pYkQ"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_RLSAsFH-EeOiV_gEc3pYkQ" type="3012" element="_RLFzcFH-EeOiV_gEc3pYkQ">
+              <children xmi:type="notation:Node" xmi:id="_RLSAs1H-EeOiV_gEc3pYkQ" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_RLSAtFH-EeOiV_gEc3pYkQ" x="21"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_RLT14FH-EeOiV_gEc3pYkQ" type="3004" element="_RLGagFH-EeOiV_gEc3pYkQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_RLT14VH-EeOiV_gEc3pYkQ" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RLT14lH-EeOiV_gEc3pYkQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_RLSAsVH-EeOiV_gEc3pYkQ" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RLSAslH-EeOiV_gEc3pYkQ" x="-12" y="145" width="20" height="20"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_RLSnwFH-EeOiV_gEc3pYkQ" type="3012" element="_RLGahFH-EeOiV_gEc3pYkQ">
+              <children xmi:type="notation:Node" xmi:id="_RLSnw1H-EeOiV_gEc3pYkQ" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_RLSnxFH-EeOiV_gEc3pYkQ" x="21" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_RLUc8FH-EeOiV_gEc3pYkQ" type="3004" element="_RLHBkFH-EeOiV_gEc3pYkQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_RLUc8VH-EeOiV_gEc3pYkQ" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RLUc8lH-EeOiV_gEc3pYkQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_RLSnwVH-EeOiV_gEc3pYkQ" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RLSnwlH-EeOiV_gEc3pYkQ" x="130" y="-12" width="20" height="20"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_QlGKeFH-EeOiV_gEc3pYkQ" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QlGKeVH-EeOiV_gEc3pYkQ" x="725" y="90" width="153" height="233"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_QlGxhFH-EeOiV_gEc3pYkQ" type="2002" element="_QlBSA1H-EeOiV_gEc3pYkQ">
+            <children xmi:type="notation:Node" xmi:id="_QlGxh1H-EeOiV_gEc3pYkQ" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_QlHYkFH-EeOiV_gEc3pYkQ" type="7001">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_QlHYkVH-EeOiV_gEc3pYkQ"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_QlHYklH-EeOiV_gEc3pYkQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_QlGxhVH-EeOiV_gEc3pYkQ" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QlGxhlH-EeOiV_gEc3pYkQ" x="410" y="395"/>
+          </children>
+          <styles xmi:type="notation:DiagramStyle" xmi:id="_QlB5AlH-EeOiV_gEc3pYkQ"/>
+          <edges xmi:type="notation:Edge" xmi:id="_Rctu8FH-EeOiV_gEc3pYkQ" type="4001" element="_RcqEkFH-EeOiV_gEc3pYkQ" source="_RLPkcFH-EeOiV_gEc3pYkQ" target="_RLKr8FH-EeOiV_gEc3pYkQ">
+            <children xmi:type="notation:Node" xmi:id="_Rctu9FH-EeOiV_gEc3pYkQ" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Rctu9VH-EeOiV_gEc3pYkQ" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_Rctu9lH-EeOiV_gEc3pYkQ" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Rctu91H-EeOiV_gEc3pYkQ" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_RcuWAFH-EeOiV_gEc3pYkQ" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RcuWAVH-EeOiV_gEc3pYkQ" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_Rctu8VH-EeOiV_gEc3pYkQ"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_Rctu8lH-EeOiV_gEc3pYkQ" fontName="Segoe UI"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Rctu81H-EeOiV_gEc3pYkQ" points="[7, 272, 147, -408]$[7, 462, 147, -218]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_RcuWAlH-EeOiV_gEc3pYkQ" id="(0.5,0.5)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_RcuWA1H-EeOiV_gEc3pYkQ" id="(0.5,0.5)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_RcuWBFH-EeOiV_gEc3pYkQ" type="4001" element="_RcqrolH-EeOiV_gEc3pYkQ" source="_RLQLgFH-EeOiV_gEc3pYkQ" target="_RLSAsFH-EeOiV_gEc3pYkQ">
+            <children xmi:type="notation:Node" xmi:id="_Rcu9EFH-EeOiV_gEc3pYkQ" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Rcu9EVH-EeOiV_gEc3pYkQ" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_Rcu9ElH-EeOiV_gEc3pYkQ" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Rcu9E1H-EeOiV_gEc3pYkQ" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_Rcu9FFH-EeOiV_gEc3pYkQ" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Rcu9FVH-EeOiV_gEc3pYkQ" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_RcuWBVH-EeOiV_gEc3pYkQ"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_RcuWBlH-EeOiV_gEc3pYkQ" fontName="Segoe UI"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_RcuWB1H-EeOiV_gEc3pYkQ" points="[10, 0, -150, 0]$[92, 0, -68, 0]$[150, 0, -10, 0]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Rcu9FlH-EeOiV_gEc3pYkQ" id="(0.5,0.5)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Rcu9F1H-EeOiV_gEc3pYkQ" id="(0.5,0.5)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_RcvkIFH-EeOiV_gEc3pYkQ" type="4001" element="_RcrSsFH-EeOiV_gEc3pYkQ" source="_RLSnwFH-EeOiV_gEc3pYkQ" target="_RLNIMFH-EeOiV_gEc3pYkQ">
+            <children xmi:type="notation:Node" xmi:id="_RcvkJFH-EeOiV_gEc3pYkQ" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RcvkJVH-EeOiV_gEc3pYkQ" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_RcvkJlH-EeOiV_gEc3pYkQ" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RcvkJ1H-EeOiV_gEc3pYkQ" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_RcvkKFH-EeOiV_gEc3pYkQ" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RcvkKVH-EeOiV_gEc3pYkQ" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_RcvkIVH-EeOiV_gEc3pYkQ" routing="Tree"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_RcvkIlH-EeOiV_gEc3pYkQ" fontName="Segoe UI"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_RcvkI1H-EeOiV_gEc3pYkQ" points="[0, -8, 480, -23]$[0, -26, 480, -41]$[-480, -26, 0, -41]$[-480, 7, 0, -8]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_RcvkKlH-EeOiV_gEc3pYkQ" id="(0.5,0.5)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_RcwLMFH-EeOiV_gEc3pYkQ" id="(0.5,0.5)"/>
+          </edges>
+        </data>
+      </ownedAnnotationEntries>
+      <ownedDiagramElements xmi:type="viewpoint:DNodeContainer" xmi:id="_QlBR8VH-EeOiV_gEc3pYkQ" name="hmi">
+        <target xmi:type="functional_analysis_architecture:AnalysisFunction" href="abs.east_adl#//@artifacts.1/@analysisFunctions.0"/>
+        <semanticElements xmi:type="functional_analysis_architecture:AnalysisFunction" href="abs.east_adl#//@artifacts.1/@analysisFunctions.0"/>
+        <ownedBorderedNodes xmi:type="viewpoint:DNode" xmi:id="_RLCJEFH-EeOiV_gEc3pYkQ" name="targetDistance" incomingEdges="_RcqEkFH-EeOiV_gEc3pYkQ" width="2" height="2">
+          <target xmi:type="common:SignalFunctionPort" href="abs.east_adl#//@artifacts.1/@analysisFunctions.0/@ports.0"/>
+          <semanticElements xmi:type="common:SignalFunctionPort" href="abs.east_adl#//@artifacts.1/@analysisFunctions.0/@ports.0"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="viewpoint:BundledImage" xmi:id="_RLCwIFH-EeOiV_gEc3pYkQ">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_RLCwIVH-EeOiV_gEc3pYkQ"/>
+            <description xmi:type="style:BundledImageDescription" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20analysis%20function']/@borderedNodeMappings[name='Signal%20Function%20Port']/@conditionnalStyles.1/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_RLCwIlH-EeOiV_gEc3pYkQ"/>
+            <color xmi:type="viewpoint:RGBValues" xmi:id="_RLCwI1H-EeOiV_gEc3pYkQ" red="114" green="159" blue="207"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description:NodeMapping" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20analysis%20function']/@borderedNodeMappings[name='Signal%20Function%20Port']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="viewpoint:DNode" xmi:id="_RLCwJFH-EeOiV_gEc3pYkQ" name="desiredDistance" incomingEdges="_RcrSsFH-EeOiV_gEc3pYkQ" width="2" height="2">
+          <target xmi:type="common:SignalFunctionPort" href="abs.east_adl#//@artifacts.1/@analysisFunctions.0/@ports.1"/>
+          <semanticElements xmi:type="common:SignalFunctionPort" href="abs.east_adl#//@artifacts.1/@analysisFunctions.0/@ports.1"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="viewpoint:BundledImage" xmi:id="_RLDXMFH-EeOiV_gEc3pYkQ">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_RLDXMVH-EeOiV_gEc3pYkQ"/>
+            <description xmi:type="style:BundledImageDescription" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20analysis%20function']/@borderedNodeMappings[name='Signal%20Function%20Port']/@conditionnalStyles.1/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_RLDXMlH-EeOiV_gEc3pYkQ"/>
+            <color xmi:type="viewpoint:RGBValues" xmi:id="_RLDXM1H-EeOiV_gEc3pYkQ" red="114" green="159" blue="207"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description:NodeMapping" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20analysis%20function']/@borderedNodeMappings[name='Signal%20Function%20Port']"/>
+        </ownedBorderedNodes>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="viewpoint:FlatContainerStyle" xmi:id="_QlBR8lH-EeOiV_gEc3pYkQ">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_QlBR81H-EeOiV_gEc3pYkQ"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@containerMappings[name='Analysis%20Function']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_QlBR9FH-EeOiV_gEc3pYkQ"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_QlBR9VH-EeOiV_gEc3pYkQ" red="255" green="255" blue="255"/>
+          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_QlBR9lH-EeOiV_gEc3pYkQ" red="209" green="209" blue="209"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description:ContainerMappingImport" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20analysis%20function']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="viewpoint:DNodeContainer" xmi:id="_QlBR91H-EeOiV_gEc3pYkQ" name="perception">
+        <target xmi:type="functional_analysis_architecture:AnalysisFunction" href="abs.east_adl#//@artifacts.1/@analysisFunctions.1"/>
+        <semanticElements xmi:type="functional_analysis_architecture:AnalysisFunction" href="abs.east_adl#//@artifacts.1/@analysisFunctions.1"/>
+        <ownedBorderedNodes xmi:type="viewpoint:DNode" xmi:id="_RLD-QFH-EeOiV_gEc3pYkQ" name="realTargetDistance" outgoingEdges="_RcqEkFH-EeOiV_gEc3pYkQ" width="2" height="2">
+          <target xmi:type="common:SignalFunctionPort" href="abs.east_adl#//@artifacts.1/@analysisFunctions.1/@ports.0"/>
+          <semanticElements xmi:type="common:SignalFunctionPort" href="abs.east_adl#//@artifacts.1/@analysisFunctions.1/@ports.0"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="viewpoint:BundledImage" xmi:id="_RLElUFH-EeOiV_gEc3pYkQ">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_RLElUVH-EeOiV_gEc3pYkQ"/>
+            <description xmi:type="style:BundledImageDescription" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20analysis%20function']/@borderedNodeMappings[name='Signal%20Function%20Port']/@conditionnalStyles.0/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_RLElUlH-EeOiV_gEc3pYkQ"/>
+            <color xmi:type="viewpoint:RGBValues" xmi:id="_RLElU1H-EeOiV_gEc3pYkQ" red="194" green="239" blue="255"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description:NodeMapping" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20analysis%20function']/@borderedNodeMappings[name='Signal%20Function%20Port']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="viewpoint:DNode" xmi:id="_RLElVFH-EeOiV_gEc3pYkQ" name="rainIntensity" outgoingEdges="_RcqrolH-EeOiV_gEc3pYkQ" width="2" height="2">
+          <target xmi:type="common:SignalFunctionPort" href="abs.east_adl#//@artifacts.1/@analysisFunctions.1/@ports.1"/>
+          <semanticElements xmi:type="common:SignalFunctionPort" href="abs.east_adl#//@artifacts.1/@analysisFunctions.1/@ports.1"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="viewpoint:BundledImage" xmi:id="_RLFMYFH-EeOiV_gEc3pYkQ">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_RLFMYVH-EeOiV_gEc3pYkQ"/>
+            <description xmi:type="style:BundledImageDescription" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20analysis%20function']/@borderedNodeMappings[name='Signal%20Function%20Port']/@conditionnalStyles.0/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_RLFMYlH-EeOiV_gEc3pYkQ"/>
+            <color xmi:type="viewpoint:RGBValues" xmi:id="_RLFMY1H-EeOiV_gEc3pYkQ" red="194" green="239" blue="255"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description:NodeMapping" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20analysis%20function']/@borderedNodeMappings[name='Signal%20Function%20Port']"/>
+        </ownedBorderedNodes>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="viewpoint:FlatContainerStyle" xmi:id="_QlBR-FH-EeOiV_gEc3pYkQ">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_QlBR-VH-EeOiV_gEc3pYkQ"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@containerMappings[name='Analysis%20Function']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_QlBR-lH-EeOiV_gEc3pYkQ"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_QlBR-1H-EeOiV_gEc3pYkQ" red="255" green="255" blue="255"/>
+          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_QlBR_FH-EeOiV_gEc3pYkQ" red="209" green="209" blue="209"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description:ContainerMappingImport" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20analysis%20function']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="viewpoint:DNodeContainer" xmi:id="_QlBR_VH-EeOiV_gEc3pYkQ" name="vehiculeApplication">
+        <target xmi:type="functional_analysis_architecture:AnalysisFunction" href="abs.east_adl#//@artifacts.1/@analysisFunctions.2"/>
+        <semanticElements xmi:type="functional_analysis_architecture:AnalysisFunction" href="abs.east_adl#//@artifacts.1/@analysisFunctions.2"/>
+        <ownedBorderedNodes xmi:type="viewpoint:DNode" xmi:id="_RLFzcFH-EeOiV_gEc3pYkQ" name="rainIntensity" incomingEdges="_RcqrolH-EeOiV_gEc3pYkQ" width="2" height="2">
+          <target xmi:type="common:SignalFunctionPort" href="abs.east_adl#//@artifacts.1/@analysisFunctions.2/@ports.0"/>
+          <semanticElements xmi:type="common:SignalFunctionPort" href="abs.east_adl#//@artifacts.1/@analysisFunctions.2/@ports.0"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="viewpoint:BundledImage" xmi:id="_RLGagFH-EeOiV_gEc3pYkQ">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_RLGagVH-EeOiV_gEc3pYkQ"/>
+            <description xmi:type="style:BundledImageDescription" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20analysis%20function']/@borderedNodeMappings[name='Signal%20Function%20Port']/@conditionnalStyles.1/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_RLGaglH-EeOiV_gEc3pYkQ"/>
+            <color xmi:type="viewpoint:RGBValues" xmi:id="_RLGag1H-EeOiV_gEc3pYkQ" red="114" green="159" blue="207"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description:NodeMapping" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20analysis%20function']/@borderedNodeMappings[name='Signal%20Function%20Port']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="viewpoint:DNode" xmi:id="_RLGahFH-EeOiV_gEc3pYkQ" name="desiredDistance" outgoingEdges="_RcrSsFH-EeOiV_gEc3pYkQ" width="2" height="2">
+          <target xmi:type="common:SignalFunctionPort" href="abs.east_adl#//@artifacts.1/@analysisFunctions.2/@ports.1"/>
+          <semanticElements xmi:type="common:SignalFunctionPort" href="abs.east_adl#//@artifacts.1/@analysisFunctions.2/@ports.1"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="viewpoint:BundledImage" xmi:id="_RLHBkFH-EeOiV_gEc3pYkQ">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_RLHBkVH-EeOiV_gEc3pYkQ"/>
+            <description xmi:type="style:BundledImageDescription" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20analysis%20function']/@borderedNodeMappings[name='Signal%20Function%20Port']/@conditionnalStyles.0/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_RLHBklH-EeOiV_gEc3pYkQ"/>
+            <color xmi:type="viewpoint:RGBValues" xmi:id="_RLHBk1H-EeOiV_gEc3pYkQ" red="194" green="239" blue="255"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description:NodeMapping" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20analysis%20function']/@borderedNodeMappings[name='Signal%20Function%20Port']"/>
+        </ownedBorderedNodes>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="viewpoint:FlatContainerStyle" xmi:id="_QlBR_lH-EeOiV_gEc3pYkQ">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_QlBR_1H-EeOiV_gEc3pYkQ"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@containerMappings[name='Analysis%20Function']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_QlBSAFH-EeOiV_gEc3pYkQ"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_QlBSAVH-EeOiV_gEc3pYkQ" red="255" green="255" blue="255"/>
+          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_QlBSAlH-EeOiV_gEc3pYkQ" red="209" green="209" blue="209"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description:ContainerMappingImport" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20analysis%20function']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="viewpoint:DNodeContainer" xmi:id="_QlBSA1H-EeOiV_gEc3pYkQ" name="vda">
+        <target xmi:type="functional_analysis_architecture:AnalysisFunction" href="abs.east_adl#//@artifacts.1/@analysisFunctions.3"/>
+        <semanticElements xmi:type="functional_analysis_architecture:AnalysisFunction" href="abs.east_adl#//@artifacts.1/@analysisFunctions.3"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="viewpoint:FlatContainerStyle" xmi:id="_QlBSBFH-EeOiV_gEc3pYkQ">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_QlBSBVH-EeOiV_gEc3pYkQ"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@containerMappings[name='Analysis%20Function']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_QlBSBlH-EeOiV_gEc3pYkQ"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_QlBSB1H-EeOiV_gEc3pYkQ" red="255" green="255" blue="255"/>
+          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_QlBSCFH-EeOiV_gEc3pYkQ" red="209" green="209" blue="209"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description:ContainerMappingImport" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']/@containerMappings[name='Import%20analysis%20function']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="viewpoint:DEdge" xmi:id="_RcqEkFH-EeOiV_gEc3pYkQ" sourceNode="_RLD-QFH-EeOiV_gEc3pYkQ" targetNode="_RLCJEFH-EeOiV_gEc3pYkQ">
+        <target xmi:type="common:ConnectorSignal" href="abs.east_adl#//@artifacts.1/@connectorSignals.0"/>
+        <semanticElements xmi:type="common:ConnectorSignal" href="abs.east_adl#//@artifacts.1/@connectorSignals.0"/>
+        <ownedStyle xmi:type="viewpoint:EdgeStyle" xmi:id="_RcqroFH-EeOiV_gEc3pYkQ">
+          <description xmi:type="style:EdgeStyleDescription" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Signals']/@edgeMappings[name='Signal%20connector']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_RcqroVH-EeOiV_gEc3pYkQ" red="136" green="136" blue="136"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description:EdgeMapping" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Signals']/@edgeMappings[name='Signal%20connector']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="viewpoint:DEdge" xmi:id="_RcqrolH-EeOiV_gEc3pYkQ" sourceNode="_RLElVFH-EeOiV_gEc3pYkQ" targetNode="_RLFzcFH-EeOiV_gEc3pYkQ">
+        <target xmi:type="common:ConnectorSignal" href="abs.east_adl#//@artifacts.1/@connectorSignals.1"/>
+        <semanticElements xmi:type="common:ConnectorSignal" href="abs.east_adl#//@artifacts.1/@connectorSignals.1"/>
+        <ownedStyle xmi:type="viewpoint:EdgeStyle" xmi:id="_Rcqro1H-EeOiV_gEc3pYkQ">
+          <customFeatures>routingStyle</customFeatures>
+          <description xmi:type="style:EdgeStyleDescription" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Signals']/@edgeMappings[name='Signal%20connector']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_RcqrpFH-EeOiV_gEc3pYkQ" red="136" green="136" blue="136"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description:EdgeMapping" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Signals']/@edgeMappings[name='Signal%20connector']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="viewpoint:DEdge" xmi:id="_RcrSsFH-EeOiV_gEc3pYkQ" sourceNode="_RLGahFH-EeOiV_gEc3pYkQ" targetNode="_RLCwJFH-EeOiV_gEc3pYkQ">
+        <target xmi:type="common:ConnectorSignal" href="abs.east_adl#//@artifacts.1/@connectorSignals.2"/>
+        <semanticElements xmi:type="common:ConnectorSignal" href="abs.east_adl#//@artifacts.1/@connectorSignals.2"/>
+        <ownedStyle xmi:type="viewpoint:EdgeStyle" xmi:id="_RcrSsVH-EeOiV_gEc3pYkQ" routingStyle="tree">
+          <customFeatures>routingStyle</customFeatures>
+          <description xmi:type="style:EdgeStyleDescription" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Signals']/@edgeMappings[name='Signal%20connector']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_RcrSslH-EeOiV_gEc3pYkQ" red="136" green="136" blue="136"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description:EdgeMapping" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Signals']/@edgeMappings[name='Signal%20connector']"/>
+      </ownedDiagramElements>
+      <description xmi:type="description:DiagramDescription" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']"/>
+      <filterVariableHistory xmi:type="viewpoint:FilterVariableHistory" xmi:id="_QlBSCVH-EeOiV_gEc3pYkQ"/>
+      <activatedLayers xmi:type="description:Layer" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer"/>
+      <activatedLayers xmi:type="description:OptionalLayer" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Ports']"/>
+      <activatedLayers xmi:type="description:OptionalLayer" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@optionalLayers[name='Signals']"/>
+      <target xmi:type="functional_analysis_architecture:FunctionalAnalysisArchitecture" href="abs.east_adl#//@artifacts.1"/>
+    </ownedRepresentations>
+    <ownedRepresentations xmi:type="viewpoint:DSemanticDiagram" xmi:id="_rhwlMFH-EeOiV_gEc3pYkQ" name="Structure of vehiculeApplication">
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_riZeYFH-EeOiV_gEc3pYkQ" source="GMF_DIAGRAMS">
+        <data xmi:type="notation:Diagram" xmi:id="_riZeYVH-EeOiV_gEc3pYkQ" type="Viewpoint" element="_rhwlMFH-EeOiV_gEc3pYkQ" measurementUnit="Pixel">
+          <children xmi:type="notation:Node" xmi:id="_sHrVsFH-EeOiV_gEc3pYkQ" type="2002" element="_sHAnUFH-EeOiV_gEc3pYkQ">
+            <children xmi:type="notation:Node" xmi:id="_sHrVs1H-EeOiV_gEc3pYkQ" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_sHr8wFH-EeOiV_gEc3pYkQ" type="7001">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_sHr8wVH-EeOiV_gEc3pYkQ"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_sHr8wlH-EeOiV_gEc3pYkQ"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_wQEHYFH-EeOiV_gEc3pYkQ" type="3012" element="_wPk_MFH-EeOiV_gEc3pYkQ">
+              <children xmi:type="notation:Node" xmi:id="_wQEucVH-EeOiV_gEc3pYkQ" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_wQEuclH-EeOiV_gEc3pYkQ" x="-48" y="-17"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_wQFVgFH-EeOiV_gEc3pYkQ" type="3004" element="_wPlmQFH-EeOiV_gEc3pYkQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_wQFVgVH-EeOiV_gEc3pYkQ" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wQFVglH-EeOiV_gEc3pYkQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_wQEHYVH-EeOiV_gEc3pYkQ" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wQEucFH-EeOiV_gEc3pYkQ" x="116" y="132" width="20" height="20"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_sHrVsVH-EeOiV_gEc3pYkQ" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sHrVslH-EeOiV_gEc3pYkQ" x="180" y="95" width="126" height="206"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_s134cFH-EeOiV_gEc3pYkQ" type="2002" element="_s1bzkFH-EeOiV_gEc3pYkQ">
+            <children xmi:type="notation:Node" xmi:id="_s14fgFH-EeOiV_gEc3pYkQ" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_s14fgVH-EeOiV_gEc3pYkQ" type="7001">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_s14fglH-EeOiV_gEc3pYkQ"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_s14fg1H-EeOiV_gEc3pYkQ"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_wyFPUFH-EeOiV_gEc3pYkQ" type="3012" element="_wxkR8FH-EeOiV_gEc3pYkQ">
+              <children xmi:type="notation:Node" xmi:id="_wyF2YlH-EeOiV_gEc3pYkQ" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_wyF2Y1H-EeOiV_gEc3pYkQ" x="-49" y="-17"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_wyGdcFH-EeOiV_gEc3pYkQ" type="3004" element="_wxk5AFH-EeOiV_gEc3pYkQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_wyGdcVH-EeOiV_gEc3pYkQ" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wyGdclH-EeOiV_gEc3pYkQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_wyF2YFH-EeOiV_gEc3pYkQ" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wyF2YVH-EeOiV_gEc3pYkQ" x="-12" y="135" width="20" height="20"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_s134cVH-EeOiV_gEc3pYkQ" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_s134clH-EeOiV_gEc3pYkQ" x="485" y="95" width="128" height="208"/>
+          </children>
+          <styles xmi:type="notation:DiagramStyle" xmi:id="_riZeYlH-EeOiV_gEc3pYkQ"/>
+          <edges xmi:type="notation:Edge" xmi:id="_yzEPoFH-EeOiV_gEc3pYkQ" type="4001" element="_yyjSQFH-EeOiV_gEc3pYkQ" source="_wQEHYFH-EeOiV_gEc3pYkQ" target="_wyFPUFH-EeOiV_gEc3pYkQ">
+            <children xmi:type="notation:Node" xmi:id="_yzE2sFH-EeOiV_gEc3pYkQ" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yzE2sVH-EeOiV_gEc3pYkQ" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_yzE2slH-EeOiV_gEc3pYkQ" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yzE2s1H-EeOiV_gEc3pYkQ" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_yzE2tFH-EeOiV_gEc3pYkQ" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yzE2tVH-EeOiV_gEc3pYkQ" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_yzEPoVH-EeOiV_gEc3pYkQ"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_yzEPolH-EeOiV_gEc3pYkQ" fontName="Segoe UI"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yzEPo1H-EeOiV_gEc3pYkQ" points="[10, 3, -174, 2]$[186, -5, 2, -6]"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yzE2tlH-EeOiV_gEc3pYkQ" id="(0.95,0.4)"/>
+          </edges>
+        </data>
+      </ownedAnnotationEntries>
+      <ownedDiagramElements xmi:type="viewpoint:DNodeContainer" xmi:id="_sHAnUFH-EeOiV_gEc3pYkQ" name="AnalysisFunction_1">
+        <target xmi:type="functional_analysis_architecture:AnalysisFunction" href="abs.east_adl#//@artifacts.1/@analysisFunctions.2/@subFunctions.0"/>
+        <semanticElements xmi:type="functional_analysis_architecture:AnalysisFunction" href="abs.east_adl#//@artifacts.1/@analysisFunctions.2/@subFunctions.0"/>
+        <ownedBorderedNodes xmi:type="viewpoint:DNode" xmi:id="_wPk_MFH-EeOiV_gEc3pYkQ" name="InProvidedSignal_1" outgoingEdges="_yyjSQFH-EeOiV_gEc3pYkQ" width="2" height="2">
+          <target xmi:type="common:SignalFunctionPort" href="abs.east_adl#//@artifacts.1/@analysisFunctions.2/@subFunctions.0/@ports.0"/>
+          <semanticElements xmi:type="common:SignalFunctionPort" href="abs.east_adl#//@artifacts.1/@analysisFunctions.2/@subFunctions.0/@ports.0"/>
+          <ownedStyle xmi:type="viewpoint:BundledImage" xmi:id="_wPlmQFH-EeOiV_gEc3pYkQ">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_wPlmQVH-EeOiV_gEc3pYkQ"/>
+            <description xmi:type="style:BundledImageDescription" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@optionalLayers[name='Internal%20Ports']/@containerMappings[name='Internal%20import%20analysis%20function']/@borderedNodeMappings[name='Internal%20Signal%20Function%20Port']/@conditionnalStyles.0/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_wPlmQlH-EeOiV_gEc3pYkQ"/>
+            <color xmi:type="viewpoint:RGBValues" xmi:id="_wPlmQ1H-EeOiV_gEc3pYkQ" red="233" green="185" blue="110"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description:NodeMapping" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@optionalLayers[name='Internal%20Ports']/@containerMappings[name='Internal%20import%20analysis%20function']/@borderedNodeMappings[name='Internal%20Signal%20Function%20Port']"/>
+        </ownedBorderedNodes>
+        <ownedStyle xmi:type="viewpoint:FlatContainerStyle" xmi:id="_sHAnUVH-EeOiV_gEc3pYkQ">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_sHAnUlH-EeOiV_gEc3pYkQ"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@defaultLayer/@containerMappings[name='Internal%20Analysis%20Function']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_sHAnU1H-EeOiV_gEc3pYkQ"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_sHAnVFH-EeOiV_gEc3pYkQ" red="255" green="255" blue="255"/>
+          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_sHAnVVH-EeOiV_gEc3pYkQ" red="209" green="209" blue="209"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description:ContainerMappingImport" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@optionalLayers[name='Internal%20Ports']/@containerMappings[name='Internal%20import%20analysis%20function']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="viewpoint:DNodeContainer" xmi:id="_s1bzkFH-EeOiV_gEc3pYkQ" name="AnalysisFunction_2">
+        <target xmi:type="functional_analysis_architecture:AnalysisFunction" href="abs.east_adl#//@artifacts.1/@analysisFunctions.2/@subFunctions.1"/>
+        <semanticElements xmi:type="functional_analysis_architecture:AnalysisFunction" href="abs.east_adl#//@artifacts.1/@analysisFunctions.2/@subFunctions.1"/>
+        <ownedBorderedNodes xmi:type="viewpoint:DNode" xmi:id="_wxkR8FH-EeOiV_gEc3pYkQ" name="InRequiredSignal_1" incomingEdges="_yyjSQFH-EeOiV_gEc3pYkQ" width="2" height="2">
+          <target xmi:type="common:SignalFunctionPort" href="abs.east_adl#//@artifacts.1/@analysisFunctions.2/@subFunctions.1/@ports.0"/>
+          <semanticElements xmi:type="common:SignalFunctionPort" href="abs.east_adl#//@artifacts.1/@analysisFunctions.2/@subFunctions.1/@ports.0"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="viewpoint:BundledImage" xmi:id="_wxk5AFH-EeOiV_gEc3pYkQ">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_wxk5AVH-EeOiV_gEc3pYkQ"/>
+            <description xmi:type="style:BundledImageDescription" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@optionalLayers[name='Internal%20Ports']/@containerMappings[name='Internal%20import%20analysis%20function']/@borderedNodeMappings[name='Internal%20Signal%20Function%20Port']/@conditionnalStyles.1/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_wxk5AlH-EeOiV_gEc3pYkQ"/>
+            <color xmi:type="viewpoint:RGBValues" xmi:id="_wxk5A1H-EeOiV_gEc3pYkQ"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description:NodeMapping" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@optionalLayers[name='Internal%20Ports']/@containerMappings[name='Internal%20import%20analysis%20function']/@borderedNodeMappings[name='Internal%20Signal%20Function%20Port']"/>
+        </ownedBorderedNodes>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="viewpoint:FlatContainerStyle" xmi:id="_s1caoFH-EeOiV_gEc3pYkQ">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_s1caoVH-EeOiV_gEc3pYkQ"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@defaultLayer/@containerMappings[name='Internal%20Analysis%20Function']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_s1caolH-EeOiV_gEc3pYkQ"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_s1cao1H-EeOiV_gEc3pYkQ" red="255" green="255" blue="255"/>
+          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_s1capFH-EeOiV_gEc3pYkQ" red="209" green="209" blue="209"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description:ContainerMappingImport" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@optionalLayers[name='Internal%20Ports']/@containerMappings[name='Internal%20import%20analysis%20function']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="viewpoint:DEdge" xmi:id="_yyjSQFH-EeOiV_gEc3pYkQ" sourceNode="_wPk_MFH-EeOiV_gEc3pYkQ" targetNode="_wxkR8FH-EeOiV_gEc3pYkQ">
+        <target xmi:type="common:ConnectorSignal" href="abs.east_adl#//@artifacts.1/@connectorSignals.3"/>
+        <semanticElements xmi:type="common:ConnectorSignal" href="abs.east_adl#//@artifacts.1/@connectorSignals.3"/>
+        <ownedStyle xmi:type="viewpoint:EdgeStyle" xmi:id="_yyj5UFH-EeOiV_gEc3pYkQ" size="0">
+          <description xmi:type="style:EdgeStyleDescription" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@optionalLayers[name='Internal%20Signals']/@edgeMappings[name='Internal%20Signal%20connector']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_yyj5UVH-EeOiV_gEc3pYkQ" red="136" green="136" blue="136"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description:EdgeMapping" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@optionalLayers[name='Internal%20Signals']/@edgeMappings[name='Internal%20Signal%20connector']"/>
+      </ownedDiagramElements>
+      <description xmi:type="description:DiagramDescription" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']"/>
+      <filterVariableHistory xmi:type="viewpoint:FilterVariableHistory" xmi:id="_rhwlMVH-EeOiV_gEc3pYkQ"/>
+      <activatedLayers xmi:type="description:Layer" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@defaultLayer"/>
+      <activatedLayers xmi:type="description:OptionalLayer" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@optionalLayers[name='Internal%20Ports']"/>
+      <activatedLayers xmi:type="description:OptionalLayer" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@optionalLayers[name='Internal%20Signals']"/>
+      <target xmi:type="functional_analysis_architecture:AnalysisFunction" href="abs.east_adl#//@artifacts.1/@analysisFunctions.2"/>
+    </ownedRepresentations>
+    <viewpoint xmi:type="description:Viewpoint" href="../description/eastadl.odesign#//@ownedViewpoints[name='EAST-ADL']"/>
+  </ownedViews>
+</viewpoint:DAnalysis>

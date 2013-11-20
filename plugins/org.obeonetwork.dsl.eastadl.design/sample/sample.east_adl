@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<east_adl:EASTADLModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:common="http://www.topcased.org/0.11.0/east_adl/structure/common" xmlns:east_adl="http://www.topcased.org/0.11.0/east_adl" xmlns:functional_analysis_architecture="http://www.topcased.org/0.11.0/east_adl/structure/functional_analysis_architecture" xmlns:functional_design_architecture="http://www.topcased.org/0.11.0/east_adl/structure/functional_design_architecture" xmlns:vehicle_feature_model="http://www.topcased.org/0.11.0/east_adl/structure/vehicle_feature_model">
+  <artifacts xsi:type="vehicle_feature_model:VehicleFeatureModel" name="VehicleFeatureModel_1" analysisArchitecture="//@artifacts.1" designArchitecture="//@artifacts.3"/>
+  <artifacts xsi:type="functional_analysis_architecture:FunctionalAnalysisArchitecture" name="FunctionalAnalysisArchitecure_1" vehicleModel="//@artifacts.0" designArchitecture="//@artifacts.2">
+    <analysisFunctions name="AnalysisFunction_1">
+      <parameters name="Parameter_1"/>
+      <parameters name="Parameter_2"/>
+      <parameters name="Parameter_3"/>
+      <ports xsi:type="common:SignalFunctionPort" name="RequiredSignal_1">
+        <interface xsi:type="common:SignalFunctionPortInterface" name="" emitedSignals="//@artifacts.1/@connectorSignals.0"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <ports xsi:type="common:SignalFunctionPort" name="RequiredSignal_2">
+        <interface xsi:type="common:SignalFunctionPortInterface" receivedSignals="//@artifacts.1/@connectorSignals.1"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <ports xsi:type="common:SignalFunctionPort" name="RequiredSignal_3">
+        <interface xsi:type="common:SignalFunctionPortInterface"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <ports xsi:type="common:SignalFunctionPort" name="RequiredSignal_4">
+        <interface xsi:type="common:SignalFunctionPortInterface"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <ports xsi:type="common:SignalFunctionPort" name="ProvidedSignal_1" provided="true">
+        <interface xsi:type="common:SignalFunctionPortInterface"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <ports xsi:type="common:OperationFunctionPort" name="ProvidedOperation_1">
+        <interface xsi:type="common:OperationFunctionPortInterface" emitedCalls="//@artifacts.1/@operationCalls.1"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <ports xsi:type="common:OperationFunctionPort" name="ProvidedOperation_2">
+        <interface xsi:type="common:OperationFunctionPortInterface"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <subFunctions name="AnalysisFunction_1">
+        <parameters name="Parameter_1"/>
+        <parameters name="Parameter_2"/>
+        <parameters name="Parameter_3"/>
+        <parameters name="Parameter_4"/>
+        <ports xsi:type="common:SignalFunctionPort" name="ProvidedSignal_1" provided="true">
+          <interface xsi:type="common:SignalFunctionPortInterface" emitedSignals="//@artifacts.1/@connectorSignals.3 //@artifacts.1/@connectorSignals.4"/>
+          <period>
+            <upper/>
+            <lower/>
+            <nominal/>
+            <jitter/>
+          </period>
+          <transferTime>
+            <upper/>
+            <lower/>
+            <nominal/>
+            <jitter/>
+          </transferTime>
+        </ports>
+        <ports xsi:type="common:SignalFunctionPort" name="RequiredSignal_1">
+          <interface xsi:type="common:SignalFunctionPortInterface" receivedSignals="//@artifacts.1/@connectorSignals.2 //@artifacts.1/@connectorSignals.3"/>
+          <period>
+            <upper/>
+            <lower/>
+            <nominal/>
+            <jitter/>
+          </period>
+          <transferTime>
+            <upper/>
+            <lower/>
+            <nominal/>
+            <jitter/>
+          </transferTime>
+        </ports>
+        <ports xsi:type="common:OperationFunctionPort" name="ProvidedOperation_1" provided="true">
+          <interface xsi:type="common:OperationFunctionPortInterface"/>
+          <period>
+            <upper/>
+            <lower/>
+            <nominal/>
+            <jitter/>
+          </period>
+          <transferTime>
+            <upper/>
+            <lower/>
+            <nominal/>
+            <jitter/>
+          </transferTime>
+        </ports>
+        <ports xsi:type="common:OperationFunctionPort" name="ProvidedOperation_1">
+          <interface xsi:type="common:OperationFunctionPortInterface"/>
+          <period>
+            <upper/>
+            <lower/>
+            <nominal/>
+            <jitter/>
+          </period>
+          <transferTime>
+            <upper/>
+            <lower/>
+            <nominal/>
+            <jitter/>
+          </transferTime>
+        </ports>
+        <subFunctions name="AnalysisFunction_1">
+          <ports xsi:type="common:SignalFunctionPort" name="ProvidedSignal_1" provided="true">
+            <interface xsi:type="common:SignalFunctionPortInterface"/>
+            <period>
+              <upper/>
+              <lower/>
+              <nominal/>
+              <jitter/>
+            </period>
+            <transferTime>
+              <upper/>
+              <lower/>
+              <nominal/>
+              <jitter/>
+            </transferTime>
+          </ports>
+          <ports xsi:type="common:OperationFunctionPort" name="ProvidedOperation_1">
+            <interface xsi:type="common:OperationFunctionPortInterface"/>
+            <period>
+              <upper/>
+              <lower/>
+              <nominal/>
+              <jitter/>
+            </period>
+            <transferTime>
+              <upper/>
+              <lower/>
+              <nominal/>
+              <jitter/>
+            </transferTime>
+          </ports>
+        </subFunctions>
+      </subFunctions>
+      <subFunctions name="AnalysisFunction_2">
+        <parameters name="Parameter_1"/>
+        <parameters name="Parameter_2"/>
+        <parameters name="Parameter_3"/>
+        <parameters name="Parameter_4"/>
+        <ports xsi:type="common:SignalFunctionPort" name="RequiredSignal_1">
+          <interface xsi:type="common:SignalFunctionPortInterface" emitedSignals="//@artifacts.1/@connectorSignals.2"/>
+          <period>
+            <upper/>
+            <lower/>
+            <nominal/>
+            <jitter/>
+          </period>
+          <transferTime>
+            <upper/>
+            <lower/>
+            <nominal/>
+            <jitter/>
+          </transferTime>
+        </ports>
+        <ports xsi:type="common:OperationFunctionPort" name="ProvidedOperation_1" provided="true">
+          <interface xsi:type="common:OperationFunctionPortInterface"/>
+          <period>
+            <upper/>
+            <lower/>
+            <nominal/>
+            <jitter/>
+          </period>
+          <transferTime>
+            <upper/>
+            <lower/>
+            <nominal/>
+            <jitter/>
+          </transferTime>
+        </ports>
+        <ports xsi:type="common:SignalFunctionPort" name="ProvidedSignal_1" provided="true">
+          <interface xsi:type="common:SignalFunctionPortInterface"/>
+          <period>
+            <upper/>
+            <lower/>
+            <nominal/>
+            <jitter/>
+          </period>
+          <transferTime>
+            <upper/>
+            <lower/>
+            <nominal/>
+            <jitter/>
+          </transferTime>
+        </ports>
+      </subFunctions>
+      <functionalDevices name="FunctionalDevice_1">
+        <parameters name="Parameter_1"/>
+        <parameters name="Parameter_2"/>
+        <parameters name="Parameter_3"/>
+        <parameters name="Parameter_4"/>
+        <ports xsi:type="common:OperationFunctionPort" name="ProvidedOperation_1" provided="true">
+          <interface xsi:type="common:OperationFunctionPortInterface"/>
+          <period>
+            <upper/>
+            <lower/>
+            <nominal/>
+            <jitter/>
+          </period>
+          <transferTime>
+            <upper/>
+            <lower/>
+            <nominal/>
+            <jitter/>
+          </transferTime>
+        </ports>
+        <ports xsi:type="common:OperationFunctionPort" name="ProvidedOperation_1">
+          <interface xsi:type="common:OperationFunctionPortInterface"/>
+          <period>
+            <upper/>
+            <lower/>
+            <nominal/>
+            <jitter/>
+          </period>
+          <transferTime>
+            <upper/>
+            <lower/>
+            <nominal/>
+            <jitter/>
+          </transferTime>
+        </ports>
+        <ports xsi:type="common:SignalFunctionPort" name="RequiredSignal_1">
+          <interface xsi:type="common:SignalFunctionPortInterface" receivedSignals="//@artifacts.1/@connectorSignals.4"/>
+          <period>
+            <upper/>
+            <lower/>
+            <nominal/>
+            <jitter/>
+          </period>
+          <transferTime>
+            <upper/>
+            <lower/>
+            <nominal/>
+            <jitter/>
+          </transferTime>
+        </ports>
+        <ports xsi:type="common:SignalFunctionPort" name="ProvidedSignal_1" provided="true">
+          <interface xsi:type="common:SignalFunctionPortInterface"/>
+          <period>
+            <upper/>
+            <lower/>
+            <nominal/>
+            <jitter/>
+          </period>
+          <transferTime>
+            <upper/>
+            <lower/>
+            <nominal/>
+            <jitter/>
+          </transferTime>
+        </ports>
+      </functionalDevices>
+    </analysisFunctions>
+    <analysisFunctions name="AnalysisFunction_2">
+      <parameters name="Parameter_1"/>
+      <ports xsi:type="common:SignalFunctionPort" name="ProvidedSignal_1" provided="true">
+        <interface xsi:type="common:SignalFunctionPortInterface" emitedSignals="//@artifacts.1/@connectorSignals.1"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <ports xsi:type="common:SignalFunctionPort" name="ProvidedSignal_2" provided="true">
+        <interface xsi:type="common:SignalFunctionPortInterface"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <ports xsi:type="common:SignalFunctionPort" name="ProvidedSignal_3" provided="true">
+        <interface xsi:type="common:SignalFunctionPortInterface"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <ports xsi:type="common:SignalFunctionPort" name="ProvidedSignal_4" provided="true">
+        <interface xsi:type="common:SignalFunctionPortInterface" receivedSignals="//@artifacts.1/@connectorSignals.0"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <ports xsi:type="common:SignalFunctionPort" name="RequiredSignal_1">
+        <interface xsi:type="common:SignalFunctionPortInterface"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <ports xsi:type="common:OperationFunctionPort" name="ProvidedOperation_4" provided="true">
+        <interface xsi:type="common:OperationFunctionPortInterface" receivedCalls="//@artifacts.1/@operationCalls.0"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <ports xsi:type="common:OperationFunctionPort" name="ProvidedOperation_4" provided="true">
+        <interface xsi:type="common:OperationFunctionPortInterface" receivedCalls="//@artifacts.1/@operationCalls.1"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <ports xsi:type="common:OperationFunctionPort" name="ProvidedOperation_3" provided="true">
+        <interface xsi:type="common:OperationFunctionPortInterface" emitedCalls="//@artifacts.1/@operationCalls.0"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <ports xsi:type="common:SignalFunctionPort" name="ProvidedSignal_5" provided="true">
+        <interface xsi:type="common:SignalFunctionPortInterface"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+    </analysisFunctions>
+    <functionalDevices name="FunctionalDevice_1">
+      <ports xsi:type="common:SignalFunctionPort" name="RequiredSignal_1">
+        <interface xsi:type="common:SignalFunctionPortInterface"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <ports xsi:type="common:OperationFunctionPort" name="ProvidedOperation_1" provided="true">
+        <interface xsi:type="common:OperationFunctionPortInterface"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <ports xsi:type="common:OperationFunctionPort" name="ProvidedOperation_2" provided="true">
+        <interface xsi:type="common:OperationFunctionPortInterface"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <ports xsi:type="common:SignalFunctionPort" name="ProvidedSignal_1" provided="true">
+        <interface xsi:type="common:SignalFunctionPortInterface"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <ports xsi:type="common:OperationFunctionPort" name="ProvidedOperation_3" provided="true">
+        <interface xsi:type="common:OperationFunctionPortInterface"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+    </functionalDevices>
+    <functionalDevices name="FunctionalDevice_2">
+      <parameters name="Parameter_1"/>
+      <ports xsi:type="common:OperationFunctionPort" name="ProvidedOperation_1">
+        <interface xsi:type="common:OperationFunctionPortInterface"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+    </functionalDevices>
+    <connectorSignals emitter="//@artifacts.1/@analysisFunctions.0/@ports.0/@interface" receiver="//@artifacts.1/@analysisFunctions.1/@ports.3/@interface">
+      <period>
+        <upper/>
+        <lower/>
+        <nominal/>
+        <jitter/>
+      </period>
+    </connectorSignals>
+    <connectorSignals name="ProvidedSignal_1_to_RequiredSignal_2_signal" emitter="//@artifacts.1/@analysisFunctions.1/@ports.0/@interface" receiver="//@artifacts.1/@analysisFunctions.0/@ports.1/@interface">
+      <period>
+        <upper/>
+        <lower/>
+        <nominal/>
+        <jitter/>
+      </period>
+    </connectorSignals>
+    <connectorSignals name="RequiredSignal_1_to_RequiredSignal_1_signal" emitter="//@artifacts.1/@analysisFunctions.0/@subFunctions.1/@ports.0/@interface" receiver="//@artifacts.1/@analysisFunctions.0/@subFunctions.0/@ports.1/@interface">
+      <period>
+        <upper/>
+        <lower/>
+        <nominal/>
+        <jitter/>
+      </period>
+    </connectorSignals>
+    <connectorSignals name="ProvidedSignal_1_to_RequiredSignal_1_signal" emitter="//@artifacts.1/@analysisFunctions.0/@subFunctions.0/@ports.0/@interface" receiver="//@artifacts.1/@analysisFunctions.0/@subFunctions.0/@ports.1/@interface">
+      <period>
+        <upper/>
+        <lower/>
+        <nominal/>
+        <jitter/>
+      </period>
+    </connectorSignals>
+    <connectorSignals name="ProvidedSignal_1_to_RequiredSignal_1_signal" emitter="//@artifacts.1/@analysisFunctions.0/@subFunctions.0/@ports.0/@interface" receiver="//@artifacts.1/@analysisFunctions.0/@functionalDevices.0/@ports.2/@interface">
+      <period>
+        <upper/>
+        <lower/>
+        <nominal/>
+        <jitter/>
+      </period>
+    </connectorSignals>
+    <operationCalls receiver="//@artifacts.1/@analysisFunctions.1/@ports.5/@interface" emitter="//@artifacts.1/@analysisFunctions.1/@ports.7/@interface"/>
+    <operationCalls name="ProvidedOperation_1_to_ProvidedOperation_4_call" receiver="//@artifacts.1/@analysisFunctions.1/@ports.6/@interface" emitter="//@artifacts.1/@analysisFunctions.0/@ports.5/@interface"/>
+  </artifacts>
+  <artifacts xsi:type="functional_design_architecture:FunctionalDesignArchitecture" name="FunctionalDesignArchitecure_1" analysisArchitecture="//@artifacts.1"/>
+  <artifacts xsi:type="functional_design_architecture:FunctionalDesignArchitecture" name="FunctionalDesignArchitecure_2" vehicleModel="//@artifacts.0"/>
+</east_adl:EASTADLModel>

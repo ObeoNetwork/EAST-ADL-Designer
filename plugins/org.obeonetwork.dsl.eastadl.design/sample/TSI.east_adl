@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<east_adl:EASTADLModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:common="http://www.topcased.org/0.11.0/east_adl/structure/common" xmlns:east_adl="http://www.topcased.org/0.11.0/east_adl" xmlns:functional_analysis_architecture="http://www.topcased.org/0.11.0/east_adl/structure/functional_analysis_architecture" name="TSI">
+  <artifacts xsi:type="functional_analysis_architecture:FunctionalAnalysisArchitecture" name="Turn_Signal_Indicator_FAA">
+    <analysisFunctions name="AnalysisFunction_1">
+      <ports xsi:type="common:SignalFunctionPort" name="SC_Left_Out" provided="true">
+        <interface xsi:type="common:SignalFunctionPortInterface" emitedSignals="//@artifacts.0/@connectorSignals.1"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <ports xsi:type="common:SignalFunctionPort" name="SC_Right_Out" provided="true">
+        <interface xsi:type="common:SignalFunctionPortInterface" emitedSignals="//@artifacts.0/@connectorSignals.2"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <ports xsi:type="common:SignalFunctionPort" name="SCS_Left">
+        <interface xsi:type="common:SignalFunctionPortInterface" receivedSignals="//@artifacts.0/@connectorSignals.3"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <ports xsi:type="common:SignalFunctionPort" name="SCS_Right">
+        <interface xsi:type="common:SignalFunctionPortInterface" receivedSignals="//@artifacts.0/@connectorSignals.4"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <ports xsi:type="common:SignalFunctionPort" name="PWM_In">
+        <interface xsi:type="common:SignalFunctionPortInterface" receivedSignals="//@artifacts.0/@connectorSignals.9"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+    </analysisFunctions>
+    <analysisFunctions name="PWM_Unit">
+      <ports xsi:type="common:SignalFunctionPort" name="SCS_Left">
+        <interface xsi:type="common:SignalFunctionPortInterface" receivedSignals="//@artifacts.0/@connectorSignals.5"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <ports xsi:type="common:SignalFunctionPort" name="SCS_Right">
+        <interface xsi:type="common:SignalFunctionPortInterface" receivedSignals="//@artifacts.0/@connectorSignals.6"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <ports xsi:type="common:SignalFunctionPort" name="SWB_Left">
+        <interface xsi:type="common:SignalFunctionPortInterface" receivedSignals="//@artifacts.0/@connectorSignals.7"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <ports xsi:type="common:SignalFunctionPort" name="SWB_Right">
+        <interface xsi:type="common:SignalFunctionPortInterface" receivedSignals="//@artifacts.0/@connectorSignals.8"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <ports xsi:type="common:SignalFunctionPort" name="PWM_Out" provided="true">
+        <interface xsi:type="common:SignalFunctionPortInterface" emitedSignals="//@artifacts.0/@connectorSignals.9"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+    </analysisFunctions>
+    <functionalDevices name="SCS_Indicator">
+      <ports xsi:type="common:SignalFunctionPort" name="SCS_Left" provided="true">
+        <interface xsi:type="common:SignalFunctionPortInterface" name="" emitedSignals="//@artifacts.0/@connectorSignals.3 //@artifacts.0/@connectorSignals.5"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <ports xsi:type="common:SignalFunctionPort" name="SCS_Right" provided="true">
+        <interface xsi:type="common:SignalFunctionPortInterface" emitedSignals="//@artifacts.0/@connectorSignals.4 //@artifacts.0/@connectorSignals.6"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+    </functionalDevices>
+    <functionalDevices name="SWB_Indicator">
+      <ports xsi:type="common:SignalFunctionPort" name="SWB_Left" provided="true">
+        <interface xsi:type="common:SignalFunctionPortInterface" emitedSignals="//@artifacts.0/@connectorSignals.7"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+      <ports xsi:type="common:SignalFunctionPort" name="SWB_Right" provided="true">
+        <interface xsi:type="common:SignalFunctionPortInterface" emitedSignals="//@artifacts.0/@connectorSignals.8"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+    </functionalDevices>
+    <functionalDevices name="Right_Lights">
+      <ports xsi:type="common:SignalFunctionPort" name="SC_Right_In">
+        <interface xsi:type="common:SignalFunctionPortInterface" receivedSignals="//@artifacts.0/@connectorSignals.2"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+    </functionalDevices>
+    <functionalDevices name="Left_Lights">
+      <ports xsi:type="common:SignalFunctionPort" name="SC_Left_In">
+        <interface xsi:type="common:SignalFunctionPortInterface" receivedSignals="//@artifacts.0/@connectorSignals.0 //@artifacts.0/@connectorSignals.1"/>
+        <period>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </period>
+        <transferTime>
+          <upper/>
+          <lower/>
+          <nominal/>
+          <jitter/>
+        </transferTime>
+      </ports>
+    </functionalDevices>
+    <connectorSignals name="ProvidedSignal_1_to_RequiredSignal_1_signal" receiver="//@artifacts.0/@functionalDevices.3/@ports.0/@interface">
+      <period>
+        <upper/>
+        <lower/>
+        <nominal/>
+        <jitter/>
+      </period>
+    </connectorSignals>
+    <connectorSignals name="SC_Left_Out_to_SC_Left_In_signal" emitter="//@artifacts.0/@analysisFunctions.0/@ports.0/@interface" receiver="//@artifacts.0/@functionalDevices.3/@ports.0/@interface">
+      <period>
+        <upper/>
+        <lower/>
+        <nominal/>
+        <jitter/>
+      </period>
+    </connectorSignals>
+    <connectorSignals name="SC_Right_Out_to_SC_Right_In_signal" emitter="//@artifacts.0/@analysisFunctions.0/@ports.1/@interface" receiver="//@artifacts.0/@functionalDevices.2/@ports.0/@interface">
+      <period>
+        <upper/>
+        <lower/>
+        <nominal/>
+        <jitter/>
+      </period>
+    </connectorSignals>
+    <connectorSignals name="SCS_Left_to_SCS_Left_signal" emitter="//@artifacts.0/@functionalDevices.0/@ports.0/@interface" receiver="//@artifacts.0/@analysisFunctions.0/@ports.2/@interface">
+      <period>
+        <upper/>
+        <lower/>
+        <nominal/>
+        <jitter/>
+      </period>
+    </connectorSignals>
+    <connectorSignals name="SCS_Right_to_SCS_Right_signal" emitter="//@artifacts.0/@functionalDevices.0/@ports.1/@interface" receiver="//@artifacts.0/@analysisFunctions.0/@ports.3/@interface">
+      <period>
+        <upper/>
+        <lower/>
+        <nominal/>
+        <jitter/>
+      </period>
+    </connectorSignals>
+    <connectorSignals name="SCS_Left_to_SCS_Left_signal" emitter="//@artifacts.0/@functionalDevices.0/@ports.0/@interface" receiver="//@artifacts.0/@analysisFunctions.1/@ports.0/@interface">
+      <period>
+        <upper/>
+        <lower/>
+        <nominal/>
+        <jitter/>
+      </period>
+    </connectorSignals>
+    <connectorSignals name="SCS_Right_to_SCS_Right_signal" emitter="//@artifacts.0/@functionalDevices.0/@ports.1/@interface" receiver="//@artifacts.0/@analysisFunctions.1/@ports.1/@interface">
+      <period>
+        <upper/>
+        <lower/>
+        <nominal/>
+        <jitter/>
+      </period>
+    </connectorSignals>
+    <connectorSignals name="SWB_Left_to_SWB_Left_signal" emitter="//@artifacts.0/@functionalDevices.1/@ports.0/@interface" receiver="//@artifacts.0/@analysisFunctions.1/@ports.2/@interface">
+      <period>
+        <upper/>
+        <lower/>
+        <nominal/>
+        <jitter/>
+      </period>
+    </connectorSignals>
+    <connectorSignals name="SWB_Right_to_SWB_Right_signal" emitter="//@artifacts.0/@functionalDevices.1/@ports.1/@interface" receiver="//@artifacts.0/@analysisFunctions.1/@ports.3/@interface">
+      <period>
+        <upper/>
+        <lower/>
+        <nominal/>
+        <jitter/>
+      </period>
+    </connectorSignals>
+    <connectorSignals name="PWM_Out_to_PWM_In_signal" emitter="//@artifacts.0/@analysisFunctions.1/@ports.4/@interface" receiver="//@artifacts.0/@analysisFunctions.0/@ports.4/@interface">
+      <period>
+        <upper/>
+        <lower/>
+        <nominal/>
+        <jitter/>
+      </period>
+    </connectorSignals>
+  </artifacts>
+</east_adl:EASTADLModel>
