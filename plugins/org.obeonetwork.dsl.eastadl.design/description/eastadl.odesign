@@ -404,7 +404,7 @@
         </toolSections>
       </optionalLayers>
     </ownedRepresentations>
-    <ownedRepresentations xsi:type="description:DiagramDescription" name="Internal structure of Analysis Function" titleExpression="Structure of &lt;%name%>" domainClass="AnalysisFunction">
+    <ownedRepresentations xsi:type="description:DiagramDescription" name="Internal structure of Analysis Function" titleExpression="Structure of &lt;%name%>" domainClass="AnalysisFunction" reusedTools="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@toolSections.0/@ownedTools[name='Internal%20structure%20of%20Analysis%20Function']">
       <filters xsi:type="filter:CompositeFilterDescription" name="Parameter">
         <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@defaultLayer/@containerMappings[name='Internal%20Analysis%20Function']/@subNodeMappings[name='Internal%20Parameter'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@containerMappings[name='Analysis%20Function']/@subNodeMappings[name='Parameter'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@optionalLayers[name='Internal%20Ports']/@containerMappings[name='Internal%20import%20analysis%20function']/@subNodeMappings[name='Import%20Internal%20Parameter']"/>
       </filters>
