@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.obeonetwork.dsl.east_adl.presentation.East_adlModelWizardID"
+            name="%_UI_East_adlModelWizard_label"
+            class="org.obeonetwork.dsl.east_adl.presentation.East_adlModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/East_adlModelFileWizard.gif">
+         <description>%_UI_East_adlModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="org.obeonetwork.dsl.east_adl.presentation.East_adlEditorID"
+            name="%_UI_East_adlEditor_label"
+            icon="icons/full/obj16/East_adlModelFile.gif"
+            extensions="east_adl"
+            class="org.obeonetwork.dsl.east_adl.presentation.East_adlEditor"
+            contributorClass="org.obeonetwork.dsl.east_adl.presentation.East_adlActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.obeonetwork.dsl.east_adl.structure.vehicle_feature_model.presentation.Vehicle_feature_modelModelWizardID"
+            name="%_UI_Vehicle_feature_modelModelWizard_label"
+            class="org.obeonetwork.dsl.east_adl.structure.vehicle_feature_model.presentation.Vehicle_feature_modelModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Vehicle_feature_modelModelFile.gif">
+         <description>%_UI_Vehicle_feature_modelModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="org.obeonetwork.dsl.east_adl.structure.vehicle_feature_model.presentation.Vehicle_feature_modelEditorID"
+            name="%_UI_Vehicle_feature_modelEditor_label"
+            icon="icons/full/obj16/Vehicle_feature_modelModelFile.gif"
+            extensions="vehicle_feature_model"
+            class="org.obeonetwork.dsl.east_adl.structure.vehicle_feature_model.presentation.Vehicle_feature_modelEditor"
+            contributorClass="org.obeonetwork.dsl.east_adl.structure.vehicle_feature_model.presentation.Vehicle_feature_modelActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.obeonetwork.dsl.east_adl.structure.functional_analysis_architecture.presentation.Functional_analysis_architectureModelWizardID"
+            name="%_UI_Functional_analysis_architectureModelWizard_label"
+            class="org.obeonetwork.dsl.east_adl.structure.functional_analysis_architecture.presentation.Functional_analysis_architectureModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Functional_analysis_architectureModelFile.gif">
+         <description>%_UI_Functional_analysis_architectureModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="org.obeonetwork.dsl.east_adl.structure.functional_analysis_architecture.presentation.Functional_analysis_architectureEditorID"
+            name="%_UI_Functional_analysis_architectureEditor_label"
+            icon="icons/full/obj16/Functional_analysis_architectureModelFile.gif"
+            extensions="functional_analysis_architecture"
+            class="org.obeonetwork.dsl.east_adl.structure.functional_analysis_architecture.presentation.Functional_analysis_architectureEditor"
+            contributorClass="org.obeonetwork.dsl.east_adl.structure.functional_analysis_architecture.presentation.Functional_analysis_architectureActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.obeonetwork.dsl.east_adl.structure.functional_design_architecture.presentation.Functional_design_architectureModelWizardID"
+            name="%_UI_Functional_design_architectureModelWizard_label"
+            class="org.obeonetwork.dsl.east_adl.structure.functional_design_architecture.presentation.Functional_design_architectureModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Functional_design_architectureModelFile.gif">
+         <description>%_UI_Functional_design_architectureModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="org.obeonetwork.dsl.east_adl.structure.functional_design_architecture.presentation.Functional_design_architectureEditorID"
+            name="%_UI_Functional_design_architectureEditor_label"
+            icon="icons/full/obj16/Functional_design_architectureModelFile.gif"
+            extensions="functional_design_architecture"
+            class="org.obeonetwork.dsl.east_adl.structure.functional_design_architecture.presentation.Functional_design_architectureEditor"
+            contributorClass="org.obeonetwork.dsl.east_adl.structure.functional_design_architecture.presentation.Functional_design_architectureActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.obeonetwork.dsl.east_adl.structure.function_instance_model.presentation.Function_instance_modelModelWizardID"
+            name="%_UI_Function_instance_modelModelWizard_label"
+            class="org.obeonetwork.dsl.east_adl.structure.function_instance_model.presentation.Function_instance_modelModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Function_instance_modelModelFile.gif">
+         <description>%_UI_Function_instance_modelModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="org.obeonetwork.dsl.east_adl.structure.function_instance_model.presentation.Function_instance_modelEditorID"
+            name="%_UI_Function_instance_modelEditor_label"
+            icon="icons/full/obj16/Function_instance_modelModelFile.gif"
+            extensions="function_instance_model"
+            class="org.obeonetwork.dsl.east_adl.structure.function_instance_model.presentation.Function_instance_modelEditor"
+            contributorClass="org.obeonetwork.dsl.east_adl.structure.function_instance_model.presentation.Function_instance_modelActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.obeonetwork.dsl.east_adl.structure.hardware_architecture.presentation.Hardware_architectureModelWizardID"
+            name="%_UI_Hardware_architectureModelWizard_label"
+            class="org.obeonetwork.dsl.east_adl.structure.hardware_architecture.presentation.Hardware_architectureModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Hardware_architectureModelFile.gif">
+         <description>%_UI_Hardware_architectureModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="org.obeonetwork.dsl.east_adl.structure.hardware_architecture.presentation.Hardware_architectureEditorID"
+            name="%_UI_Hardware_architectureEditor_label"
+            icon="icons/full/obj16/Hardware_architectureModelFile.gif"
+            extensions="hardware_architecture"
+            class="org.obeonetwork.dsl.east_adl.structure.hardware_architecture.presentation.Hardware_architectureEditor"
+            contributorClass="org.obeonetwork.dsl.east_adl.structure.hardware_architecture.presentation.Hardware_architectureActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.obeonetwork.dsl.east_adl.structure.platform_model.presentation.Platform_modelModelWizardID"
+            name="%_UI_Platform_modelModelWizard_label"
+            class="org.obeonetwork.dsl.east_adl.structure.platform_model.presentation.Platform_modelModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Platform_modelModelFile.gif">
+         <description>%_UI_Platform_modelModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="org.obeonetwork.dsl.east_adl.structure.platform_model.presentation.Platform_modelEditorID"
+            name="%_UI_Platform_modelEditor_label"
+            icon="icons/full/obj16/Platform_modelModelFile.gif"
+            extensions="platform_model"
+            class="org.obeonetwork.dsl.east_adl.structure.platform_model.presentation.Platform_modelEditor"
+            contributorClass="org.obeonetwork.dsl.east_adl.structure.platform_model.presentation.Platform_modelActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.obeonetwork.dsl.east_adl.structure.allocation_model.presentation.Allocation_modelModelWizardID"
+            name="%_UI_Allocation_modelModelWizard_label"
+            class="org.obeonetwork.dsl.east_adl.structure.allocation_model.presentation.Allocation_modelModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Allocation_modelModelFile.gif">
+         <description>%_UI_Allocation_modelModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="org.obeonetwork.dsl.east_adl.structure.allocation_model.presentation.Allocation_modelEditorID"
+            name="%_UI_Allocation_modelEditor_label"
+            icon="icons/full/obj16/Allocation_modelModelFile.gif"
+            extensions="allocation_model"
+            class="org.obeonetwork.dsl.east_adl.structure.allocation_model.presentation.Allocation_modelEditor"
+            contributorClass="org.obeonetwork.dsl.east_adl.structure.allocation_model.presentation.Allocation_modelActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.obeonetwork.dsl.east_adl.structure.common.presentation.CommonModelWizardID"
+            name="%_UI_CommonModelWizard_label"
+            class="org.obeonetwork.dsl.east_adl.structure.common.presentation.CommonModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/CommonModelFile.gif">
+         <description>%_UI_CommonModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="org.obeonetwork.dsl.east_adl.structure.common.presentation.CommonEditorID"
+            name="%_UI_CommonEditor_label"
+            icon="icons/full/obj16/CommonModelFile.gif"
+            extensions="common"
+            class="org.obeonetwork.dsl.east_adl.structure.common.presentation.CommonEditor"
+            contributorClass="org.obeonetwork.dsl.east_adl.structure.common.presentation.CommonActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.obeonetwork.dsl.east_adl.requirements.presentation.RequirementsModelWizardID"
+            name="%_UI_RequirementsModelWizard_label"
+            class="org.obeonetwork.dsl.east_adl.requirements.presentation.RequirementsModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/RequirementsModelFile.gif">
+         <description>%_UI_RequirementsModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="org.obeonetwork.dsl.east_adl.requirements.presentation.RequirementsEditorID"
+            name="%_UI_RequirementsEditor_label"
+            icon="icons/full/obj16/RequirementsModelFile.gif"
+            extensions="requirements"
+            class="org.obeonetwork.dsl.east_adl.requirements.presentation.RequirementsEditor"
+            contributorClass="org.obeonetwork.dsl.east_adl.requirements.presentation.RequirementsActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.obeonetwork.dsl.east_adl.variant_handling.presentation.Variant_handlingModelWizardID"
+            name="%_UI_Variant_handlingModelWizard_label"
+            class="org.obeonetwork.dsl.east_adl.variant_handling.presentation.Variant_handlingModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Variant_handlingModelFile.gif">
+         <description>%_UI_Variant_handlingModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="org.obeonetwork.dsl.east_adl.variant_handling.presentation.Variant_handlingEditorID"
+            name="%_UI_Variant_handlingEditor_label"
+            icon="icons/full/obj16/Variant_handlingModelFile.gif"
+            extensions="variant_handling"
+            class="org.obeonetwork.dsl.east_adl.variant_handling.presentation.Variant_handlingEditor"
+            contributorClass="org.obeonetwork.dsl.east_adl.variant_handling.presentation.Variant_handlingActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.obeonetwork.dsl.east_adl.support.presentation.SupportModelWizardID"
+            name="%_UI_SupportModelWizard_label"
+            class="org.obeonetwork.dsl.east_adl.support.presentation.SupportModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/SupportModelFile.gif">
+         <description>%_UI_SupportModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="org.obeonetwork.dsl.east_adl.support.presentation.SupportEditorID"
+            name="%_UI_SupportEditor_label"
+            icon="icons/full/obj16/SupportModelFile.gif"
+            extensions="support"
+            class="org.obeonetwork.dsl.east_adl.support.presentation.SupportEditor"
+            contributorClass="org.obeonetwork.dsl.east_adl.support.presentation.SupportActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.obeonetwork.dsl.east_adl.behavior.presentation.BehaviorModelWizardID"
+            name="%_UI_BehaviorModelWizard_label"
+            class="org.obeonetwork.dsl.east_adl.behavior.presentation.BehaviorModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/BehaviorModelFile.gif">
+         <description>%_UI_BehaviorModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="org.obeonetwork.dsl.east_adl.behavior.presentation.BehaviorEditorID"
+            name="%_UI_BehaviorEditor_label"
+            icon="icons/full/obj16/BehaviorModelFile.gif"
+            extensions="behavior"
+            class="org.obeonetwork.dsl.east_adl.behavior.presentation.BehaviorEditor"
+            contributorClass="org.obeonetwork.dsl.east_adl.behavior.presentation.BehaviorActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.obeonetwork.dsl.east_adl.verification_validation.presentation.Verification_validationModelWizardID"
+            name="%_UI_Verification_validationModelWizard_label"
+            class="org.obeonetwork.dsl.east_adl.verification_validation.presentation.Verification_validationModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Verification_validationModelFile.gif">
+         <description>%_UI_Verification_validationModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="org.obeonetwork.dsl.east_adl.verification_validation.presentation.Verification_validationEditorID"
+            name="%_UI_Verification_validationEditor_label"
+            icon="icons/full/obj16/Verification_validationModelFile.gif"
+            extensions="verification_validation"
+            class="org.obeonetwork.dsl.east_adl.verification_validation.presentation.Verification_validationEditor"
+            contributorClass="org.obeonetwork.dsl.east_adl.verification_validation.presentation.Verification_validationActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
