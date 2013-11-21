@@ -141,7 +141,7 @@
     </ownedRepresentations>
     <ownedRepresentations xsi:type="description:DiagramDescription" name="Structure of Functional Analysis Architecture" titleExpression="Structure of &lt;%name%>" domainClass="FunctionalAnalysisArchitecture">
       <defaultLayer name="Function definition" reusedTools="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Reusing']/@defaultLayer/@toolSections.0/@ownedTools[name='Name%20direct%20edit']">
-        <containerMappings name="Analysis Function" detailDescriptions="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@toolSections.0/@ownedTools[name='Internal%20structure%20of%20Analysis%20Function']" preconditionExpression="&lt;%$container == eContainer()%>" labelDirectEdit="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Reusing']/@defaultLayer/@toolSections.0/@ownedTools[name='Name%20direct%20edit']" semanticCandidatesExpression="&lt;%current.analysisFunctions%>" domainClass="AnalysisFunction">
+        <containerMappings name="Analysis Function" detailDescriptions="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@toolSections.0/@ownedTools[name='CreateInternalStructureOfAnalysisDescirption']" preconditionExpression="&lt;%$container == eContainer()%>" labelDirectEdit="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Reusing']/@defaultLayer/@toolSections.0/@ownedTools[name='Name%20direct%20edit']" semanticCandidatesExpression="&lt;%current.analysisFunctions%>" domainClass="AnalysisFunction">
           <subNodeMappings name="Parameter" labelDirectEdit="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Reusing']/@defaultLayer/@toolSections.0/@ownedTools[name='Name%20direct%20edit']" semanticCandidatesExpression="&lt;%parameters%>" domainClass="common.Parameter">
             <style xsi:type="style:BundledImageDescription" sizeComputationExpression="2" shape="dot">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -153,7 +153,7 @@
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
           </style>
         </containerMappings>
         <containerMappings name="Functional Device" preconditionExpression="&lt;%$container == eContainer()%>" semanticCandidatesExpression="&lt;%current.functionalDevices%>" domainClass="FunctionalDevice">
@@ -216,7 +216,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:DiagramCreationDescription" name="Internal structure of Analysis Function" browseExpression="Internal structure of &lt;%$container.name%>" diagramDescription="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']">
+          <ownedTools xsi:type="tool:DiagramCreationDescription" name="CreateInternalStructureOfAnalysisDescirption" diagramDescription="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']">
             <initialOperation/>
             <containerViewVariable name="containerView"/>
             <representationNameVariable name="diagramName"/>
@@ -224,7 +224,7 @@
         </toolSections>
       </defaultLayer>
       <optionalLayers name="Ports">
-        <containerMappings xsi:type="description:ContainerMappingImport" name="Import analysis function" detailDescriptions="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@toolSections.0/@ownedTools[name='Internal%20structure%20of%20Analysis%20Function']" preconditionExpression="&lt;%$container == eContainer()%>" semanticCandidatesExpression="&lt;%current.analysisFunctions%>" reusedNodeMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@containerMappings[name='Analysis%20Function']/@subNodeMappings[name='Parameter']" importedMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@containerMappings[name='Analysis%20Function']">
+        <containerMappings xsi:type="description:ContainerMappingImport" name="Import analysis function" detailDescriptions="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@toolSections.0/@ownedTools[name='CreateInternalStructureOfAnalysisDescirption']" preconditionExpression="&lt;%$container == eContainer()%>" semanticCandidatesExpression="&lt;%current.analysisFunctions%>" reusedNodeMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@containerMappings[name='Analysis%20Function']/@subNodeMappings[name='Parameter']" importedMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@containerMappings[name='Analysis%20Function']">
           <borderedNodeMappings name="Signal Function Port" preconditionExpression="&lt;%$container == eContainer()%>" labelDirectEdit="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Reusing']/@defaultLayer/@toolSections.0/@ownedTools[name='Name%20direct%20edit']" semanticCandidatesExpression="&lt;%current.eAllContents%>" domainClass="SignalFunctionPort">
             <conditionnalStyles predicateExpression="&lt;%provided == &quot;true&quot;%>">
               <style xsi:type="style:BundledImageDescription" sizeComputationExpression="2">
@@ -404,12 +404,12 @@
         </toolSections>
       </optionalLayers>
     </ownedRepresentations>
-    <ownedRepresentations xsi:type="description:DiagramDescription" name="Internal structure of Analysis Function" titleExpression="Structure of &lt;%name%>" domainClass="AnalysisFunction" reusedTools="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@toolSections.0/@ownedTools[name='Internal%20structure%20of%20Analysis%20Function']">
+    <ownedRepresentations xsi:type="description:DiagramDescription" name="Internal structure of Analysis Function" titleExpression="Structure of &lt;%name%>" domainClass="AnalysisFunction" reusedTools="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@toolSections.0/@ownedTools[name='CreateInternalStructureOfAnalysisDescirption']">
       <filters xsi:type="filter:CompositeFilterDescription" name="Parameter">
         <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@defaultLayer/@containerMappings[name='Internal%20Analysis%20Function']/@subNodeMappings[name='Internal%20Parameter'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@containerMappings[name='Analysis%20Function']/@subNodeMappings[name='Parameter'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@optionalLayers[name='Internal%20Ports']/@containerMappings[name='Internal%20import%20analysis%20function']/@subNodeMappings[name='Import%20Internal%20Parameter']"/>
       </filters>
       <defaultLayer name="Internal Function definition" reusedTools="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Reusing']/@defaultLayer/@toolSections.0/@ownedTools[name='Name%20direct%20edit']">
-        <containerMappings name="Internal Analysis Function" detailDescriptions="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@toolSections.0/@ownedTools[name='Internal%20structure%20of%20Analysis%20Function']" preconditionExpression="&lt;%eContainer() == $container%>" semanticCandidatesExpression="&lt;%current.subFunctions%>" domainClass="AnalysisFunction">
+        <containerMappings name="Internal Analysis Function" detailDescriptions="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@toolSections.0/@ownedTools[name='CreateInternalStructureOfAnalysisDescirption']" preconditionExpression="&lt;%eContainer() == $container%>" semanticCandidatesExpression="&lt;%current.subFunctions%>" domainClass="AnalysisFunction">
           <subNodeMappings name="Internal Parameter" preconditionExpression="&lt;%$container == eContainer()%>" labelDirectEdit="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Reusing']/@defaultLayer/@toolSections.0/@ownedTools[name='Name%20direct%20edit']" semanticCandidatesExpression="&lt;%current.eAllContents%>" domainClass="common.Parameter">
             <style xsi:type="style:BundledImageDescription" sizeComputationExpression="2" shape="dot">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -421,7 +421,7 @@
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
           </style>
         </containerMappings>
         <toolSections name="Tools">
@@ -450,7 +450,7 @@
         </toolSections>
       </defaultLayer>
       <optionalLayers name="Internal Ports">
-        <containerMappings xsi:type="description:ContainerMappingImport" name="Internal import analysis function" detailDescriptions="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@toolSections.0/@ownedTools[name='Internal%20structure%20of%20Analysis%20Function']" preconditionExpression="&lt;%$container == eContainer()%>" labelDirectEdit="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Reusing']/@defaultLayer/@toolSections.0/@ownedTools[name='Name%20direct%20edit']" semanticCandidatesExpression="&lt;%current.subFunctions%>" domainClass="AnalysisFunction" reusedNodeMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@defaultLayer/@containerMappings[name='Internal%20Analysis%20Function']/@subNodeMappings[name='Internal%20Parameter']" importedMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@defaultLayer/@containerMappings[name='Internal%20Analysis%20Function']">
+        <containerMappings xsi:type="description:ContainerMappingImport" name="Internal import analysis function" detailDescriptions="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Structure%20of%20Functional%20Analysis%20Architecture']/@defaultLayer/@toolSections.0/@ownedTools[name='CreateInternalStructureOfAnalysisDescirption']" preconditionExpression="&lt;%$container == eContainer()%>" labelDirectEdit="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Reusing']/@defaultLayer/@toolSections.0/@ownedTools[name='Name%20direct%20edit']" semanticCandidatesExpression="&lt;%current.subFunctions%>" domainClass="AnalysisFunction" reusedNodeMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@defaultLayer/@containerMappings[name='Internal%20Analysis%20Function']/@subNodeMappings[name='Internal%20Parameter']" importedMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='Internal%20structure%20of%20Analysis%20Function']/@defaultLayer/@containerMappings[name='Internal%20Analysis%20Function']">
           <borderedNodeMappings name="Internal Signal Function Port" preconditionExpression="&lt;%$container == eContainer()%>" semanticCandidatesExpression="&lt;%current.ports%>" domainClass="SignalFunctionPort">
             <conditionnalStyles predicateExpression="&lt;%provided == &quot;true&quot;%>">
               <style xsi:type="style:BundledImageDescription" sizeComputationExpression="2">
@@ -463,7 +463,7 @@
               <style xsi:type="style:BundledImageDescription" sizeComputationExpression="2">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_chocolate']"/>
               </style>
             </conditionnalStyles>
           </borderedNodeMappings>
@@ -479,7 +479,7 @@
               <style xsi:type="style:BundledImageDescription" sizeComputationExpression="2">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_chocolate']"/>
               </style>
             </conditionnalStyles>
           </borderedNodeMappings>
